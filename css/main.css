@@ -2,6 +2,31 @@
   width: 1100px;
   margin: 0 auto; }
 
+.section-title {
+  font-size: 3rem;
+  margin: 1rem 0; }
+
+.fs-1 {
+  font-size: 1.5rem; }
+
+.fs-2 {
+  font-size: 2rem; }
+
+.fs-3 {
+  font-size: 2.5rem; }
+
+.fs-4 {
+  font-size: 3rem; }
+
+.m-1 {
+  margin: 1rem; }
+
+.mx-1 {
+  margin: 0 1rem; }
+
+.p-s {
+  padding: 0.5rem; }
+
 .p-1 {
   padding: 1rem; }
 
@@ -11,15 +36,35 @@
 .txt-ctr {
   text-align: center; }
 
+.brd-1 {
+  border: 4px black solid; }
+
 .brc {
   border-radius: 100%; }
+
+.flx-ctr {
+  display: flex;
+  flex-direction: row; }
+
+.flex-1 {
+  flex: 1; }
+
+.grid {
+  display: grid; }
+
+.gap-1 {
+  grid-gap: 1rem; }
+
+.gap-2 {
+  grid-gap: 2rem; }
 
 * {
   padding: 0;
   margin: 0; }
 
 body {
-  font-family: "Arvo", serif; }
+  font-family: "Arvo", serif;
+  line-height: 2; }
 
 h1, h2, h3 {
   text-align: center; }
@@ -44,9 +89,6 @@ nav {
     justify-content: space-between; }
     nav .navbar-wrap .logo img {
       height: 6rem; }
-    nav .navbar-wrap .navbar-menu ul {
-      display: flex;
-      justify-content: space-evenly; }
 
 header {
   color: #fff;
@@ -58,11 +100,26 @@ header {
   justify-content: center; }
 
 #about .about-wrap {
-  display: flex; }
-  #about .about-wrap .about-img img {
-    height: 35rem; }
-  #about .about-wrap .about-content {
-    flex: 1; }
+  grid-template-areas: 'info-1 info-2 about-img about-img' 'steps steps about-img about-img' 'steps steps about-img about-img' 'steps steps about-img about-img'; }
+  #about .about-wrap p {
+    font-size: 1.2rem; }
+  #about .about-wrap img {
+    width: 100%; }
+  #about .about-wrap .info-1 {
+    grid-area: info-1; }
+  #about .about-wrap .info-2 {
+    grid-area: info-2; }
+  #about .about-wrap .steps {
+    grid-area: steps;
+    line-height: 3rem; }
+    #about .about-wrap .steps i {
+      background: #333;
+      color: white;
+      line-height: 3rem;
+      height: 3rem;
+      width: 3rem; }
+  #about .about-wrap .about-img {
+    grid-area: about-img; }
 
 #nutrition .macros-wrap {
   display: flex;
@@ -71,5 +128,5 @@ header {
   #nutrition .macros-wrap .carbs, #nutrition .macros-wrap .protein, #nutrition .macros-wrap .fats {
     flex: 1;
     margin: 2rem; }
-    #nutrition .macros-wrap .carbs img, #nutrition .macros-wrap .protein img, #nutrition .macros-wrap .fats img {
-      width: 100%; }
+  #nutrition .macros-wrap img {
+    width: 100%; }
