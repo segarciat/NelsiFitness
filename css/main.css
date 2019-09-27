@@ -7,15 +7,18 @@
   margin: 1rem 0; }
 
 .fs-1 {
-  font-size: 1.5rem; }
+  font-size: 1.1rem; }
 
 .fs-2 {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 .fs-3 {
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .fs-4 {
+  font-size: 2.5rem; }
+
+.fs-5 {
   font-size: 3rem; }
 
 .m-1 {
@@ -24,8 +27,14 @@
 .mx-1 {
   margin: 0 1rem; }
 
+.mb-1 {
+  margin-bottom: 1rem; }
+
 .p-s {
   padding: 0.5rem; }
+
+.p-m {
+  padding: 0.75rem; }
 
 .p-1 {
   padding: 1rem; }
@@ -102,7 +111,7 @@ header {
 #about .about-wrap {
   grid-template-areas: 'info-1 info-2 about-img about-img' 'steps steps about-img about-img' 'steps steps about-img about-img' 'steps steps about-img about-img'; }
   #about .about-wrap p {
-    font-size: 1.2rem; }
+    font-size: 1.05rem; }
   #about .about-wrap img {
     width: 100%; }
   #about .about-wrap .info-1 {
@@ -120,6 +129,27 @@ header {
       width: 3rem; }
   #about .about-wrap .about-img {
     grid-area: about-img; }
+
+#commitment .commit-wrap {
+  justify-content: space-evenly; }
+  #commitment .commit-wrap .commit-photo {
+    flex: 1.5; }
+    #commitment .commit-wrap .commit-photo img {
+      width: 100%; }
+  #commitment .commit-wrap .commit-list {
+    flex: 1;
+    grid-template-columns: 1fr 4fr; }
+    #commitment .commit-wrap .commit-list h3 {
+      text-align: justify; }
+    #commitment .commit-wrap .commit-list span {
+      position: relative;
+      top: 10%; }
+      #commitment .commit-wrap .commit-list span i {
+        background: #333;
+        color: #fff;
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem; }
 
 #nutrition .macros-wrap {
   display: flex;
