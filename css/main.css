@@ -1,5 +1,5 @@
 .container {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto; }
 
 .section-title {
@@ -133,23 +133,23 @@ header {
 #commitment .commit-wrap {
   justify-content: space-evenly; }
   #commitment .commit-wrap .commit-photo {
-    flex: 1.5; }
+    padding-top: 1.5rem;
+    order: 1;
+    flex: 1; }
     #commitment .commit-wrap .commit-photo img {
       width: 100%; }
   #commitment .commit-wrap .commit-list {
+    order: 2;
     flex: 1;
     grid-template-columns: 1fr 4fr; }
     #commitment .commit-wrap .commit-list h3 {
       text-align: justify; }
-    #commitment .commit-wrap .commit-list span {
-      position: relative;
-      top: 10%; }
-      #commitment .commit-wrap .commit-list span i {
-        background: #333;
-        color: #fff;
-        height: 3rem;
-        width: 3rem;
-        line-height: 3rem; }
+    #commitment .commit-wrap .commit-list span i {
+      background: #333;
+      color: #fff;
+      height: 3rem;
+      width: 3rem;
+      line-height: 3rem; }
 
 #nutrition .macros-wrap {
   display: flex;
