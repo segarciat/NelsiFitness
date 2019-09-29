@@ -1,0 +1,82 @@
+Ideas
+
+About section:
+
+1) Add a shadow to the image
+
+2) Add a rounded border around each of the three list elements. We can add some color to that later. No link to this one.
+
+3) As part of the text, mention that Nelsi currently works at Steel Factory, and maybe provide a link to its instagram page or something.
+
+4) Add animations for the three list elements when hovered. Maybe like this page:
+
+https://colorlib.com/preview/#bodyfit
+
+under 'Our Process', or like in my previous page:
+
+https://loving-goodall-28e667.netlify.com/index.html
+
+in the 'Services' section. Maybe we can make the image enlarge slightly as well.
+
+Commitment section:
+
+1) Commitment points: goal, time, money. Mention the importance of discipline and consistency.
+
+2) Horizontal vs vertical arrangement of commitment? 
+
+a) Vertical might allow for two columns; one for the commitments and another for maybe like an image or slideshow.
+
+Example: 
+
+https://colorlib.com/preview/#bodyfit
+
+in the fitness programs section.
+
+b) Horizontal means it might look like the petsg website 'Services' section.
+
+Might wanna use a symbol to represent each of the points, but for variety maybe use a square border this time. Adding some animations to them might be helpful. Perhaps the BMI tool could be accessible from here.
+
+https://colorlib.com/preview/#bodyfit
+
+under 'Our Process'
+
+or
+
+https://loving-goodall-28e667.netlify.com/index.html
+
+under 'Services'.
+
+
+
+Nutrition Section:
+
+1) Create a tool for calculating BMI like this website:
+
+https://colorlib.com/preview/#fitzone
+
+This will require Javascript. Should be fun :)
+
+2) Create a tool for calculating target calorie goal, along with target macros. Also Javascript
+
+3) Provide a default view, and provide buttons that, upon click, will change the view so that
+   foods corresponding to a certain macro will display. May need Javascript for this
+
+4) Table the nutrition section, thinking 2 rows 3 columns. Under the images, 
+maybe have a brief explanation of the importance of that macronutrient
+
+Exercise section:
+
+1) Add a list of generic exercises, and link them to instructions on how to perform them. A box layout may work.
+
+Example:
+
+https://colorlib.com/preview/#crossfits
+
+under Crossfit Experiences
+
+2) Use fontawesome symbols maybe, or some images to represent the exercises. Color them with the theme color, and use either a square or circular border.
+Between sections:
+Maybe include an array of pictures that slide automatically
+
+#F6FF33
+#33
