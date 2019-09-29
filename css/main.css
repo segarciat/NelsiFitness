@@ -104,6 +104,7 @@ header {
   background: url("../img/nelsi-mirror-commitment.jpg") no-repeat top left/cover;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center; }
@@ -153,7 +154,14 @@ header {
 
 #nutrition .macros-wrap .carbs, #nutrition .macros-wrap .protein, #nutrition .macros-wrap .fats {
   flex: 1;
-  padding: 2rem; }
+  padding: 2rem;
+  width: 100%;
+  transition: all 0.25s ease-in-out; }
+  #nutrition .macros-wrap .carbs:hover, #nutrition .macros-wrap .protein:hover, #nutrition .macros-wrap .fats:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2); }
+  #nutrition .macros-wrap .carbs img, #nutrition .macros-wrap .carbs p, #nutrition .macros-wrap .protein img, #nutrition .macros-wrap .protein p, #nutrition .macros-wrap .fats img, #nutrition .macros-wrap .fats p {
+    transition: left 1s; }
 
 #nutrition .macros-wrap img {
   width: 100%; }
