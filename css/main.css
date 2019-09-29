@@ -1,5 +1,5 @@
 .container {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto; }
 
 .section-title {
@@ -46,7 +46,7 @@
   text-align: center; }
 
 .brd-1 {
-  border: 4px black solid; }
+  border: 1px black solid; }
 
 .brc {
   border-radius: 100%; }
@@ -101,7 +101,7 @@ nav {
 
 header {
   color: #fff;
-  background: #000;
+  background: url("../img/nelsi-mirror-commitment.jpg") no-repeat top left/cover;
   height: 100vh;
   display: flex;
   text-align: center;
@@ -133,30 +133,27 @@ header {
 #commitment .commit-wrap {
   justify-content: space-evenly; }
   #commitment .commit-wrap .commit-photo {
-    flex: 1.5; }
+    padding-top: 1.5rem;
+    order: 1;
+    flex: 1; }
     #commitment .commit-wrap .commit-photo img {
       width: 100%; }
   #commitment .commit-wrap .commit-list {
+    order: 2;
     flex: 1;
     grid-template-columns: 1fr 4fr; }
     #commitment .commit-wrap .commit-list h3 {
       text-align: justify; }
-    #commitment .commit-wrap .commit-list span {
-      position: relative;
-      top: 10%; }
-      #commitment .commit-wrap .commit-list span i {
-        background: #333;
-        color: #fff;
-        height: 3rem;
-        width: 3rem;
-        line-height: 3rem; }
+    #commitment .commit-wrap .commit-list span i {
+      background: #333;
+      color: #fff;
+      height: 3rem;
+      width: 3rem;
+      line-height: 3rem; }
 
-#nutrition .macros-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-  #nutrition .macros-wrap .carbs, #nutrition .macros-wrap .protein, #nutrition .macros-wrap .fats {
-    flex: 1;
-    margin: 2rem; }
-  #nutrition .macros-wrap img {
-    width: 100%; }
+#nutrition .macros-wrap .carbs, #nutrition .macros-wrap .protein, #nutrition .macros-wrap .fats {
+  flex: 1;
+  padding: 2rem; }
+
+#nutrition .macros-wrap img {
+  width: 100%; }
