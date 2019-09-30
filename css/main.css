@@ -46,7 +46,7 @@
   text-align: center; }
 
 .brd-1 {
-  border: 4px black solid; }
+  border: 1px black solid; }
 
 .brc {
   border-radius: 100%; }
@@ -101,15 +101,19 @@ nav {
 
 header {
   color: #fff;
-  background: #000;
+  background: url("../img/nelsi-mirror-commitment.jpg") no-repeat top left/cover;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center; }
 
 #about .about-wrap {
-  grid-template-areas: 'info-1 info-2 about-img about-img' 'steps steps about-img about-img' 'steps steps about-img about-img' 'steps steps about-img about-img'; }
+  grid-template-areas: 'info-1 info-2 about-img about-img'
+ 'steps steps about-img about-img'
+ 'steps steps about-img about-img'
+ 'steps steps about-img about-img'; }
   #about .about-wrap p {
     font-size: 1.05rem; }
   #about .about-wrap img {
@@ -151,12 +155,16 @@ header {
       width: 3rem;
       line-height: 3rem; }
 
-#nutrition .macros-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-  #nutrition .macros-wrap .carbs, #nutrition .macros-wrap .protein, #nutrition .macros-wrap .fats {
-    flex: 1;
-    margin: 2rem; }
-  #nutrition .macros-wrap img {
-    width: 100%; }
+#nutrition .macros-wrap .carbs, #nutrition .macros-wrap .protein, #nutrition .macros-wrap .fats {
+  flex: 1;
+  padding: 2rem;
+  width: 100%;
+  transition: all 0.25s ease-in-out; }
+  #nutrition .macros-wrap .carbs:hover, #nutrition .macros-wrap .protein:hover, #nutrition .macros-wrap .fats:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2); }
+  #nutrition .macros-wrap .carbs img, #nutrition .macros-wrap .carbs p, #nutrition .macros-wrap .protein img, #nutrition .macros-wrap .protein p, #nutrition .macros-wrap .fats img, #nutrition .macros-wrap .fats p {
+    transition: left 1s; }
+
+#nutrition .macros-wrap img {
+  width: 100%; }
