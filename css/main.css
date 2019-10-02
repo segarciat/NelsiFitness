@@ -51,6 +51,12 @@
 .p-1 {
   padding: 1rem; }
 
+.p-x-1 {
+  padding: 0 1rem; }
+
+.p-y-s {
+  padding: 0.5rem 0; }
+
 .pt-1 {
   padding-top: 1rem; }
 
@@ -86,11 +92,12 @@
   grid-template-rows: repeat(3, 1fr); }
 
 .btn {
+  background-color: #33ffff;
   cursor: pointer;
-  color: #37eafc;
+  color: #fff;
   border: solid 1px #37eafc;
-  padding: 0.5rem;
-  border-radius: 40px;
+  padding: 0.60rem 1.25rem;
+  border-radius: 2rem;
   font-weight: bold; }
 
 .discs {
@@ -116,7 +123,11 @@ a {
     text-decoration: none; }
 
 nav {
+<<<<<<< HEAD
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+=======
+  border-bottom: 1px solid #fff;
+>>>>>>> contact
   position: absolute;
   z-index: 2;
   width: 100%; }
@@ -224,6 +235,11 @@ header {
   margin-left: 1rem; }
   #exercise .exercise-tips .tips-photo img {
     width: 100%; }
+
+#contact .txt-input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem; }
 
 footer {
   padding: 3rem 0;
