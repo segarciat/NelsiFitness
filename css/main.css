@@ -223,10 +223,17 @@ footer {
   color: #fff;
   background: #333; }
   footer .footer-wrap {
-    justify-content: space-around;
-    align-content: center; }
+    justify-content: space-between;
+    align-items: center; }
     footer .footer-wrap a {
-      margin-left: 1rem;
+      margin-right: 1rem;
       color: #fff; }
+      footer .footer-wrap a i {
+        border: 2px #fff solid;
+        font-size: 1.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center; }
     footer .footer-wrap .footer-logo img {
       width: 20%; }
