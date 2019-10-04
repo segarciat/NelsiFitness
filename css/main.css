@@ -56,11 +56,14 @@
 .px-1 {
   padding: 0 1rem; }
 
-.p-y-s {
+.py-s {
   padding: 0.5rem 0; }
 
 .pt-1 {
   padding-top: 1rem; }
+
+.pb-1 {
+  padding-bottom: 1rem; }
 
 .txt-ctr {
   text-align: center; }
@@ -94,6 +97,7 @@
   grid-template-rows: repeat(3, 1fr); }
 
 .btn {
+  display: inline-block;
   background-color: #1977BE;
   cursor: pointer;
   color: #fff;
@@ -101,6 +105,8 @@
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-weight: bold; }
+  .btn:hover {
+    background-color: #1668A6; }
 
 .discs {
   list-style-type: disc; }
@@ -169,13 +175,28 @@ nav {
 
 header {
   color: #fff;
-  background: url("../img/nelsi-mirror-commitment.jpg") no-repeat top left/cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center; }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/nelsi-exercise.jpg") no-repeat center center/cover;
+  height: 100vh; }
+  header .container {
+    position: relative;
+    height: 100%; }
+    header .container .home-content {
+      position: absolute;
+      left: 10%;
+      bottom: 30%; }
+      header .container .home-content h1, header .container .home-content h2, header .container .home-content p {
+        text-align: left; }
+      header .container .home-content p {
+        width: 80%; }
+      header .container .home-content a {
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid #fff;
+        border-radius: 0;
+        transition: all 0.5s; }
+      header .container .home-content #more:hover {
+        border: 1px solid #fdee21; }
+      header .container .home-content #follow:hover {
+        border: 1px solid #c13584; }
 
 #about {
   background: #fff;
