@@ -50,6 +50,9 @@
 .p-1 {
   padding: 1rem; }
 
+.p-2 {
+  padding: 2rem; }
+
 .p-4 {
   padding: 4rem; }
 
@@ -69,10 +72,13 @@
   text-align: center; }
 
 .brd-1 {
-  border: 1px black solid; }
+  border: 1px rgba(0, 0, 0, 0.1) solid; }
 
 .brc {
   border-radius: 100%; }
+
+.shadow {
+  box-shadow: 3px 3px 10px #000; }
 
 .flx-ctr {
   display: flex;
@@ -215,50 +221,64 @@ header {
       grid-area: steps;
       line-height: 3rem; }
       #about .about-wrap .steps i {
-        background: #000;
+        background: #444;
         color: #fff;
-        line-height: 5rem;
-        height: 5rem;
-        width: 5rem; }
+        line-height: 4rem;
+        height: 4rem;
+        width: 4rem; }
     #about .about-wrap .about-img {
       grid-area: about-img; }
 
-#commitment .commit-wrap {
-  justify-content: space-evenly; }
-  #commitment .commit-wrap .commit-photo {
-    padding-top: 1.5rem;
-    order: 1;
-    flex: 1; }
-    #commitment .commit-wrap .commit-photo img {
-      width: 100%; }
-  #commitment .commit-wrap .commit-list {
-    order: 2;
-    flex: 1;
-    grid-template-columns: 1fr 4fr; }
-    #commitment .commit-wrap .commit-list h3 {
-      text-align: justify; }
-    #commitment .commit-wrap .commit-list span i {
-      background: #000;
-      color: #fff;
-      height: 5rem;
-      width: 5rem;
-      line-height: 5rem; }
+#commitment {
+  background: linear-gradient(15deg, #fff 40%, #FEFCFB 60%); }
+  #commitment .commit-wrap {
+    justify-content: space-evenly; }
+    #commitment .commit-wrap .commit-photo {
+      order: 1;
+      flex: 1; }
+      #commitment .commit-wrap .commit-photo img {
+        width: 100%; }
+    #commitment .commit-wrap .commit-list {
+      order: 2;
+      flex: 1;
+      grid-template-columns: 1fr 4fr; }
+      #commitment .commit-wrap .commit-list h3 {
+        text-align: justify; }
+      #commitment .commit-wrap .commit-list span i {
+        background: #444;
+        color: #fff;
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        transform: rotate(0);
+        transition: transform 0.5s ease-in-out, color 0.5s, background-color 0.5s; }
+        #commitment .commit-wrap .commit-list span i:hover {
+          transform: rotate(360deg); }
 
 #nutrition {
   color: #000;
-  background: #fff; }
-  #nutrition .macros-wrap .carbs, #nutrition .macros-wrap .protein, #nutrition .macros-wrap .fats {
+  background: #f4f4f4; }
+  #nutrition .macros-wrap #carbs, #nutrition .macros-wrap #protein, #nutrition .macros-wrap #fats {
+    background: #fff;
+    margin: 1rem;
     flex: 1;
-    padding: 2rem;
     width: 100%;
     transition: all 0.25s ease-in-out; }
-    #nutrition .macros-wrap .carbs:hover, #nutrition .macros-wrap .protein:hover, #nutrition .macros-wrap .fats:hover {
+    #nutrition .macros-wrap #carbs:hover, #nutrition .macros-wrap #protein:hover, #nutrition .macros-wrap #fats:hover {
       transform: translateY(-10px);
       box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2); }
-    #nutrition .macros-wrap .carbs img, #nutrition .macros-wrap .carbs p, #nutrition .macros-wrap .protein img, #nutrition .macros-wrap .protein p, #nutrition .macros-wrap .fats img, #nutrition .macros-wrap .fats p {
+    #nutrition .macros-wrap #carbs img, #nutrition .macros-wrap #carbs p, #nutrition .macros-wrap #protein img, #nutrition .macros-wrap #protein p, #nutrition .macros-wrap #fats img, #nutrition .macros-wrap #fats p {
       transition: left 1s; }
   #nutrition .macros-wrap img {
     width: 100%; }
+  #nutrition .macros-wrap #carbs {
+    flex-direction: column; }
+    #nutrition .macros-wrap #carbs h3, #nutrition .macros-wrap #carbs .carbs-photo {
+      background-color: rgba(33, 253, 128, 0.3); }
+  #nutrition .macros-wrap #protein h3, #nutrition .macros-wrap #protein .protein-photo {
+    background-color: rgba(33, 158, 253, 0.3); }
+  #nutrition .macros-wrap #fats h3, #nutrition .macros-wrap #fats .fats-photo {
+    background-color: rgba(253, 33, 48, 0.3); }
 
 #exercise .exercise-tips .tips-info, #exercise .exercise-tips .tips-photo {
   flex: 1; }
@@ -268,7 +288,7 @@ header {
   #exercise .exercise-tips .tips-info h3 {
     text-align: left; }
   #exercise .exercise-tips .tips-info i {
-    background: #000;
+    background: #444;
     color: #fff;
     line-height: 5rem;
     height: 5rem;
