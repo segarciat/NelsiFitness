@@ -134,6 +134,7 @@ a {
     text-decoration: none; }
 
 nav {
+  color: #fff;
   background: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   position: fixed;
@@ -141,13 +142,14 @@ nav {
   width: 100%;
   transition: background-color 0.5s, height 0.5s; }
   nav .navbar-wrap {
-    display: flex !important;
+    display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     transition: padding 0.5s; }
     nav .navbar-wrap .logo {
       height: 5rem;
+      align-items: center;
       transition: height 0.5s; }
       nav .navbar-wrap .logo img {
         height: 100%; }
