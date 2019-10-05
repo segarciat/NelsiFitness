@@ -41,6 +41,9 @@
 .mb-3 {
   margin-bottom: 3rem; }
 
+.mt-1 {
+  margin-top: 1rem; }
+
 .p-s {
   padding: 0.5rem; }
 
@@ -265,6 +268,42 @@ header {
         transition: transform 0.5s ease-in-out, color 0.5s, background-color 0.5s; }
         #commitment .commit-wrap .commit-list span i:hover {
           transform: rotate(360deg); }
+  #commitment #open-bmi-tool {
+    cursor: pointer;
+    color: #1977BE; }
+  #commitment #bmi-tool {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); }
+    #commitment #bmi-tool #bmi-modal-content {
+      position: relative;
+      left: 30%;
+      top: -50%;
+      background: #fff;
+      width: 40%;
+      transition: 2s; }
+      #commitment #bmi-tool #bmi-modal-content > h2 {
+        position: relative;
+        background: #1977BE;
+        color: #fff; }
+        #commitment #bmi-tool #bmi-modal-content > h2 #close-bmi {
+          position: absolute;
+          top: -10%;
+          right: 3%;
+          cursor: pointer; }
+      #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap {
+        align-items: center;
+        justify-content: center; }
+        #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap input[type="number"] {
+          width: 30%; }
+        #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap #bmi-submit {
+          background: grey;
+          cursor: default; }
 
 #nutrition {
   color: #000;
