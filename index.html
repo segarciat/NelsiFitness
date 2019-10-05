@@ -88,7 +88,7 @@
           </span>
           <div class="goal">
             <h3 class="fs-2">Goal</h3>
-            <p>Do you want to be a runner? A lifter? Maybe you just want to gain or lose weight. Find what you want to seize, and let it steer you along.</p>
+            <p>Do you want to be a runner? A lifter? Maybe you want to have a healthy <span id="open-bmi-tool" title="BMI Tool">BMI</span>. Find what you want to seize, and let it steer you along.</p>
           </div>
           <span class="m-1 p-s">
             <i class="fas fa-clock fa-3x txt-ctr brc"></i>
@@ -103,6 +103,37 @@
           <div class="money">
             <h3 class="fs-2">Money</h3>
             <p>Your goals will dictate what you need, and that may mean spending a little more. The upshot is that you are investing on something that matters to you; your body.</p>
+          </div>
+        </div>
+      </div>
+      <div id="bmi-tool" class="shadow">
+        <div id="bmi-modal-content">
+          <h2>BMI Tool <span id="close-bmi" class="fs-3 brc"> &times;</span></h2>
+          <div id="bmi-form-wrap" class="flx-ctr p-2">
+            <form class="flex-1">
+              <div class="form-group">
+                <div><label for="weight"> Weight</label></div>
+                <input type="number" id="weight" class="txt-input">
+                <span><sub>lb</sub></span>
+              </div>
+              <div class="form-group">
+                <div><label for="height"> Height</label></div>
+                <input type="number" id="feet" class="txt-input">
+                <span class="mr-1"><sub>ft</span>
+                <input type="number" id="inches" class="txt-input">
+                <span><sub>in</span>
+              </div>
+              <div class="form-group">
+                <input class="btn" type="submit" value="Submit" id="bmi-submit" disabled>
+              </div>
+            </form>
+            <div id="bmi" class="flex-1">
+              <p><strong>BMI</strong> stands for Body Mass Index, and it is a measure of body fat.
+              </p>
+              <!-- BMI goes below -->
+              <h2 class="fs-3">-- . -</h2>
+              <h3><span id="weight-status"></span>  BMI</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -260,5 +291,6 @@
   <!-- End footer -->
 
   <script src="./js/app.js"></script>
+  <script src="./js/bmi.js"></script>
 </body>
 </html>

@@ -41,6 +41,9 @@
 .mb-3 {
   margin-bottom: 3rem; }
 
+.mt-1 {
+  margin-top: 1rem; }
+
 .p-s {
   padding: 0.5rem; }
 
@@ -128,6 +131,29 @@
   height: 2px;
   transition: all 1s ease-in-out; }
 
+.txt-input {
+  background: rgba(255, 255, 255, 0.75);
+  font-family: "Arvo", serif;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2rem; }
+  .txt-input:focus {
+    box-shadow: 0 0 1pt 1pt #1977BE;
+    outline: 0; }
+
+@keyframes slideDown {
+  from {
+    top: -50%; }
+  to {
+    top: 30%; } }
+
+@keyframes slideUp {
+  from {
+    top: 30%; }
+  to {
+    top: -50%; } }
+
 * {
   padding: 0;
   margin: 0;
@@ -205,7 +231,7 @@ header {
         border: 1px solid #c13584; }
 
 #about {
-  background: #fff;
+  background: linear-gradient(#fff, #FEFCFB);
   color: black; }
   #about .about-wrap {
     grid-template-areas: 'info-1 info-2 about-img about-img' 'steps steps about-img about-img' 'steps steps about-img about-img' 'steps steps about-img about-img'; }
@@ -230,7 +256,7 @@ header {
       grid-area: about-img; }
 
 #commitment {
-  background: linear-gradient(15deg, #fff 40%, #FEFCFB 60%); }
+  background: linear-gradient(#FEFCFB, #f4f4f4); }
   #commitment .commit-wrap {
     justify-content: space-evenly; }
     #commitment .commit-wrap .commit-photo {
@@ -254,10 +280,46 @@ header {
         transition: transform 0.5s ease-in-out, color 0.5s, background-color 0.5s; }
         #commitment .commit-wrap .commit-list span i:hover {
           transform: rotate(360deg); }
+  #commitment #open-bmi-tool {
+    cursor: pointer;
+    color: #1977BE; }
+  #commitment #bmi-tool {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); }
+    #commitment #bmi-tool #bmi-modal-content {
+      position: relative;
+      left: 30%;
+      top: -50%;
+      background: #fff;
+      width: 40%;
+      transition: 2s; }
+      #commitment #bmi-tool #bmi-modal-content > h2 {
+        position: relative;
+        background: #1977BE;
+        color: #fff; }
+        #commitment #bmi-tool #bmi-modal-content > h2 #close-bmi {
+          position: absolute;
+          top: -10%;
+          right: 3%;
+          cursor: pointer; }
+      #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap {
+        align-items: center;
+        justify-content: center; }
+        #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap input[type="number"] {
+          width: 30%; }
+        #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap #bmi-submit {
+          background: grey;
+          cursor: default; }
 
 #nutrition {
   color: #000;
-  background: #f4f4f4; }
+  background: linear-gradient(#f4f4f4, #FEFCFB); }
   #nutrition .macros-wrap #carbs, #nutrition .macros-wrap #protein, #nutrition .macros-wrap #fats {
     background: #fff;
     margin: 1rem;
@@ -280,24 +342,24 @@ header {
   #nutrition .macros-wrap #fats h3, #nutrition .macros-wrap #fats .fats-photo {
     background-color: rgba(253, 33, 48, 0.3); }
 
-#exercise .exercise-tips .tips-info, #exercise .exercise-tips .tips-photo {
-  flex: 1; }
-
-#exercise .exercise-tips .tips-info {
-  grid-template-columns: 1fr 4fr; }
-  #exercise .exercise-tips .tips-info h3 {
-    text-align: left; }
-  #exercise .exercise-tips .tips-info i {
-    background: #444;
-    color: #fff;
-    line-height: 5rem;
-    height: 5rem;
-    width: 5rem; }
-
-#exercise .exercise-tips .tips-photo {
-  margin-left: 1rem; }
-  #exercise .exercise-tips .tips-photo img {
-    width: 100%; }
+#exercise {
+  background: linear-gradient(#FEFCFB, #fff); }
+  #exercise .exercise-tips .tips-info, #exercise .exercise-tips .tips-photo {
+    flex: 1; }
+  #exercise .exercise-tips .tips-info {
+    grid-template-columns: 1fr 4fr; }
+    #exercise .exercise-tips .tips-info h3 {
+      text-align: left; }
+    #exercise .exercise-tips .tips-info i {
+      background: #444;
+      color: #fff;
+      line-height: 5rem;
+      height: 5rem;
+      width: 5rem; }
+  #exercise .exercise-tips .tips-photo {
+    margin-left: 1rem; }
+    #exercise .exercise-tips .tips-photo img {
+      width: 100%; }
 
 #contact {
   background: #fff; }
@@ -313,16 +375,7 @@ header {
       flex-direction: column;
       justify-content: center; }
       #contact .contact-wrap .contact-form-wrap form .txt-input {
-        background: rgba(255, 255, 255, 0.75);
-        font-family: "Arvo", serif;
-        border: 1px solid #ddd;
-        padding: 0.75rem;
-        margin-bottom: 1.5rem;
-        border-radius: 2rem;
         width: 100%; }
-        #contact .contact-wrap .contact-form-wrap form .txt-input:focus {
-          box-shadow: 0 0 1pt 1pt #1977BE;
-          outline: 0; }
       #contact .contact-wrap .contact-form-wrap form .message-input textarea {
         border-radius: 1.1rem; }
 
@@ -342,5 +395,8 @@ footer {
         width: 3.75rem;
         line-height: 3.75rem;
         text-align: center; }
+        footer .footer-wrap a i:hover {
+          border: 2px #fdee21 solid;
+          color: #fdee21; }
     footer .footer-wrap .footer-logo img {
       width: 20%; }
