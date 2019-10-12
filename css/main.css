@@ -5,6 +5,9 @@
 .section-title {
   font-size: 3rem; }
 
+.fs-m {
+  font-size: 0.80rem; }
+
 .fs-1 {
   font-size: 1.1rem; }
 
@@ -74,14 +77,23 @@
 .txt-ctr {
   text-align: center; }
 
+.txt-l {
+  text-align: left; }
+
+.txt-r {
+  text-align: right; }
+
 .brd-1 {
   border: 1px rgba(0, 0, 0, 0.1) solid; }
+
+.b-bot {
+  border-bottom: 1px solid #eee; }
 
 .brc {
   border-radius: 100%; }
 
 .shadow {
-  box-shadow: 3px 3px 10px #000; }
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); }
 
 .flx-ctr {
   display: flex;
@@ -105,17 +117,37 @@
 .grid-row-3 {
   grid-template-rows: repeat(3, 1fr); }
 
-.btn {
+.btn, .edit-btn, .delete-btn, .disabled-btn {
   display: inline-block;
-  background-color: #1977BE;
   cursor: pointer;
   color: #fff;
   border: none;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 3px black;
   font-weight: bold; }
+  .btn:focus, .edit-btn:focus, .delete-btn:focus, .disabled-btn:focus {
+    outline: 0; }
+
+.btn {
+  background-color: #1977BE; }
   .btn:hover {
     background-color: #1668A6; }
+
+.edit-btn {
+  background: #E5AD14;
+  border-radius: 4px; }
+  .edit-btn:hover {
+    background: #F4B305; }
+
+.delete-btn {
+  background: rgba(255, 0, 0, 0.75);
+  border-radius: 4px; }
+  .delete-btn:hover {
+    background: rgba(255, 0, 0, 0.8); }
+
+.disabled-btn {
+  background: grey;
+  cursor: default; }
 
 .discs {
   list-style-type: disc; }
@@ -131,16 +163,30 @@
   height: 2px;
   transition: all 1s ease-in-out; }
 
-.txt-input {
+.data-input {
   background: rgba(255, 255, 255, 0.75);
   font-family: "Arvo", serif;
   border: 1px solid #ddd;
   padding: 0.75rem;
   margin-bottom: 1.5rem;
   border-radius: 2rem; }
-  .txt-input:focus {
+  .data-input:focus {
     box-shadow: 0 0 1pt 1pt #1977BE;
     outline: 0; }
+
+label {
+  display: block; }
+
+table {
+  border-collapse: collapse; }
+
+tr {
+  border-bottom: 1px solid #eee; }
+
+.success {
+  background: lightgreen;
+  color: green;
+  padding: 1rem; }
 
 * {
   padding: 0;
@@ -213,6 +259,8 @@ header {
         border: 1px solid #fff;
         border-radius: 0;
         transition: all 0.5s; }
+      header .container .home-content #more, header .container .home-content #follow {
+        display: inline-block; }
       header .container .home-content #more:hover {
         border: 1px solid #fdee21; }
       header .container .home-content #follow:hover {
@@ -279,7 +327,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); }
+    background: rgba(10, 6, 6, 0.4); }
     #commitment #bmi-tool #bmi-modal-content {
       position: relative;
       left: 30%;
@@ -362,10 +410,56 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      #contact .contact-wrap .contact-form-wrap form .txt-input {
+      #contact .contact-wrap .contact-form-wrap form .data-input {
         width: 100%; }
       #contact .contact-wrap .contact-form-wrap form .message-input textarea {
         border-radius: 1.1rem; }
+
+#macro-nav {
+  position: relative;
+  background-color: #000; }
+
+#macro-tool h3 {
+  background: #1977BE;
+  color: #fff; }
+
+#macro-tool .macro-input {
+  flex: 1.5; }
+  #macro-tool .macro-input form input[type="number"] {
+    width: 35%; }
+  #macro-tool .macro-input form .edit-btn, #macro-tool .macro-input form .delete-btn {
+    display: none; }
+
+#macro-tool .macro-output {
+  position: relative;
+  flex: 4; }
+  #macro-tool .macro-output .output-wrap {
+    grid-template-areas: 's-filter s-filter s-filter' 'mytable mytable  calorie' 'mytable mytable  piechart' 'mytable mytable piechart'; }
+    #macro-tool .macro-output .output-wrap #filter-users {
+      grid-area: s-filter;
+      position: relative; }
+      #macro-tool .macro-output .output-wrap #filter-users #user-list {
+        background: #fff;
+        position: absolute;
+        z-index: 2;
+        top: 2.5rem;
+        width: 25%;
+        height: 8rem;
+        overflow: scroll;
+        display: none; }
+        #macro-tool .macro-output .output-wrap #filter-users #user-list li:hover {
+          background: powderblue; }
+    #macro-tool .macro-output .output-wrap .calorie-wrap {
+      grid-area: calorie; }
+    #macro-tool .macro-output .output-wrap #piechart {
+      grid-area: piechart; }
+    #macro-tool .macro-output .output-wrap .table-wrap {
+      grid-area: mytable; }
+    #macro-tool .macro-output .output-wrap table thead {
+      background: #1977BE;
+      color: #fff; }
+    #macro-tool .macro-output .output-wrap input[type="submit"] {
+      display: inline-block; }
 
 footer {
   padding: 3rem 0;
