@@ -117,7 +117,7 @@
 .grid-row-3 {
   grid-template-rows: repeat(3, 1fr); }
 
-.btn, .edit-btn, .delete-btn, .disabled-btn {
+.btn, .edit-btn, .delete-btn, .cancel-btn, .disabled-btn {
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -125,7 +125,7 @@
   padding: 0.5rem 1rem;
   box-shadow: 0 0 3px black;
   font-weight: bold; }
-  .btn:focus, .edit-btn:focus, .delete-btn:focus, .disabled-btn:focus {
+  .btn:focus, .edit-btn:focus, .delete-btn:focus, .cancel-btn:focus, .disabled-btn:focus {
     outline: 0; }
 
 .btn {
@@ -145,9 +145,21 @@
   .delete-btn:hover {
     background: rgba(255, 0, 0, 0.8); }
 
+.cancel-btn {
+  background: rgba(255, 0, 0, 0.75);
+  border-radius: 4px; }
+  .cancel-btn:hover {
+    background: rgba(255, 0, 0, 0.8); }
+
 .disabled-btn {
   background: grey;
   cursor: default; }
+
+.cancel-btn {
+  background: #afafaf;
+  cursor: pointer; }
+  .cancel-btn:hover {
+    background: #969696; }
 
 .discs {
   list-style-type: disc; }
@@ -356,6 +368,10 @@ header {
 #nutrition {
   color: #000;
   background: linear-gradient(#f4f4f4, #FEFCFB); }
+  #nutrition .macro-link {
+    color: #1977BE; }
+    #nutrition .macro-link:hover, #nutrition .macro-link:active, #nutrition .macro-link:visited {
+      color: #1977BE; }
   #nutrition .macros-wrap #carbs, #nutrition .macros-wrap #protein, #nutrition .macros-wrap #fats {
     background: #fff;
     margin: 1rem;
@@ -427,8 +443,14 @@ header {
   flex: 1.5; }
   #macro-tool .macro-input form input[type="number"] {
     width: 35%; }
-  #macro-tool .macro-input form .edit-btn, #macro-tool .macro-input form .delete-btn {
-    display: none; }
+  #macro-tool .macro-input form .buttons-wrap {
+    position: relative; }
+    #macro-tool .macro-input form .buttons-wrap .edit-btn, #macro-tool .macro-input form .buttons-wrap .delete-btn, #macro-tool .macro-input form .buttons-wrap .cancel-btn {
+      display: none; }
+    #macro-tool .macro-input form .buttons-wrap .cancel-btn {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
 
 #macro-tool .macro-output {
   position: relative;
@@ -466,19 +488,22 @@ footer {
   color: #fff;
   background: #000; }
   footer .footer-wrap {
-    justify-content: space-between;
-    align-items: center; }
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    justify-content: center;
+    align-items: top; }
+    footer .footer-wrap .social {
+      position: relative;
+      right: 0; }
     footer .footer-wrap a {
       margin-right: 1rem;
       color: #fff; }
-      footer .footer-wrap a i {
-        border: 2px #fff solid;
-        height: 3.75rem;
-        width: 3.75rem;
-        line-height: 3.75rem;
-        text-align: center; }
-        footer .footer-wrap a i:hover {
-          border: 2px #fdee21 solid;
-          color: #fdee21; }
-    footer .footer-wrap .footer-logo img {
-      width: 20%; }
+    footer .footer-wrap i {
+      border: 2px #fff solid;
+      height: 3.75rem;
+      width: 3.75rem;
+      line-height: 3.75rem;
+      text-align: center; }
+      footer .footer-wrap i:hover {
+        border: 2px #fdee21 solid;
+        color: #fdee21; }

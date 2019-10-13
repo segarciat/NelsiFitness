@@ -109,6 +109,7 @@ const UICtrl = (function(UserCtrl){
     clearBtn: '#clear-btn',
     deleteBtn: '.delete-btn',
     updateBtn: '.edit-btn',
+    cancelBtn: '.cancel-btn',
     tableBody: '#macro-data',
     macroForm: '.macro-input',
     macroOutput: '.macro-output',
@@ -330,6 +331,7 @@ const UICtrl = (function(UserCtrl){
       }
       let updateBtn = document.querySelector(UISelectors.updateBtn);
       let deleteBtn = document.querySelector(UISelectors.deleteBtn);
+      let cancelBtn = document.querySelector(UISelectors.cancelBtn);
       let mainButtons = [UISelectors.calcBtn, UISelectors.clearBtn, UISelectors.saveBtn];
 
       if(editState){
@@ -338,12 +340,14 @@ const UICtrl = (function(UserCtrl){
         });
         updateBtn.style.display = 'inline-block';
         deleteBtn.style.display = 'inline-block';
+        cancelBtn.style.display = 'inline-block';
       } else {
         mainButtons.forEach(btnSelector => {
           document.querySelector(btnSelector).style.display = 'inline-block';
         });
         updateBtn.style.display = 'none';
         deleteBtn.style.display = 'none';
+        cancelBtn.style.display = 'none';
       }
       
     },
@@ -399,6 +403,8 @@ const AppCtrl = (function(StorageCtrl, UICtrl, UserCtrl){
     document.querySelector(UISelectors.updateBtn).addEventListener('click', userUpdateSubmit);
 
     document.querySelector(UISelectors.deleteBtn).addEventListener('click', userDeleteSubmit);
+
+    document.querySelector(UISelectors.cancelBtn).addEventListener('click', userCancelSubmit);
   }
 
   userCalcSubmit = function(e) {
@@ -520,6 +526,12 @@ const AppCtrl = (function(StorageCtrl, UICtrl, UserCtrl){
 
       UICtrl.showMessage("Deleted use successfully!", 'success');
     }
+    e.preventDefault();
+  }
+
+  userCancelSubmit = function(e) {
+    UICtrl.toggleEditState();
+
     e.preventDefault();
   }
 
