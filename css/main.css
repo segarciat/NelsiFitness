@@ -397,6 +397,7 @@ header {
     width: 40%;
     transition: 2s; }
     #commitment #bmi-tool #bmi-modal-content > h2 {
+      width: 100%;
       position: relative;
       background: #1977BE;
       color: #fff; }
@@ -656,6 +657,17 @@ footer {
       display: block; }
   #nutrition .macros-wrap {
     display: block; }
+  #commitment #bmi-tool {
+    position: relative;
+    display: block;
+    background: rgba(0, 0, 0, 0); }
+    #commitment #bmi-tool #bmi-modal-content {
+      left: 0;
+      width: 100%; }
+      #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap {
+        padding: 0.5rem; }
+        #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap input[type="number"] {
+          width: 50%; }
   #commitment .commit-list {
     position: relative;
     display: block; }
@@ -667,9 +679,6 @@ footer {
       position: relative;
       left: 37%;
       margin: 0; }
-  #commitment #bmi-tool #bmi-modal-content {
-    width: 90%;
-    left: 5%; }
   #contact .contact-wrap {
     display: block; }
   #exercise .tips-info {
