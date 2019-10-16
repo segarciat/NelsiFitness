@@ -15,7 +15,7 @@
     <div class="container">
       <div class="navbar-wrap py-s">
         <div class="logo flx-ctr">
-          <img src="./img/nelsi-logo-alpha.png" alt="Nelsi Logo">
+          <a href="./index.html"><img src="./img/nelsi-logo-alpha.png" alt="Nelsi Logo"></a>
         </div>
       </div>
     </div>
@@ -26,17 +26,17 @@
       <h1>Macronutrient Calculator</h1>
       <h2 class="txt-l">About</h2>
       <p>Welcome to Nelsi Pamela's macronutrient tool. Find out your
-        daily caloric goal, and a breakdown by macronutrient!
+        daily caloric goal for maintaining your weight, as well as a breakdown by macronutrient!
       </p>
       <h2 class="txt-l">What happens to my information?</h2>
       <p>
-        The information you provide is use to display the results. The and information may be saved by clicking Save. This will make the results
+        The information you provide is used to display the results. The information may be saved by clicking Save. This will make the results
         available next time you use the tool, but we do not store this information, so your information is safe. You may also clear the
         information you've saved at any time.
       </p>
       <div id="macro-app" class="flx-ctr">
         <div class="macro-input brd-1 mt-1 mb-1 shadow">
-          <h3 class="">Form Name</h3>
+          <h3 class="">Personal Information</h3>
           <form class="p-1">
             <div class="form-group">
               <label for="name">Full Name</label>
@@ -61,7 +61,7 @@
               <input class="data-input"type="number" id="weight" name="weight"><sub> lbs</sub>
             </div>
             <div class="form-group">
-              <label for="frequency">How often do you attend the gym?</label>
+              <label for="frequency">How often do you attend the gym each week?</label>
               <select name="frequency" id="frequency">
                 <option value="none">Never</option>
                 <option value="low">1 to 2 times</option>
@@ -72,26 +72,26 @@
             <input id="calc-btn" class="disabled-btn mt-1" type="submit" value="Calculate" disabled>
             <div class="buttons-wrap">
               <input class="edit-btn mt-1" type="submit" value="Update">
-              <input class="delete-btn ml-1 mt-1" type="submit" value="Delete">
+              <input class="delete-btn ml-s mt-1" type="submit" value="Delete">
               <input class="cancel-btn" type="submit" value="Cancel">
             </div>
           </form>
         </div>
         <div class="macro-output brd-1 m-1 shadow">
-          <h3>Form output</h3>
+          <h3>Macronutrient Calculations</h3>
           <div class="output-wrap p-2 grid gap-1">
             <div id="filter-users">
               <input id="filter-input" class="data-input" type="text" name="filter" placeholder="Filter users">
               <ul id="user-list" class="shadow fs-m p-m"></ul>
             </div>
             <div class="calorie-wrap">
-              <h4>----</h4>
-              <h4>Daily Caloric Goal</h4>
+              <h4 class="fs-3">----</h4>
+              <h4 class="fs-2">Daily Caloric Goal</h4>
             </div>
             <div id="piechart">
             </div>
             <div class="table-wrap">
-              <table>
+              <table class="shadow">
                 <thead>
                   <tr>
                     <th class="p-1 txt-ctr">Macro</th>

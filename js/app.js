@@ -5,20 +5,47 @@ const navLinks = Array.from(document.querySelectorAll('.navbar-menu a'));
 const sections = Array.from(document.querySelectorAll('section'));
 sections.unshift(document.querySelector('header'));
 
+// Get sectionIds
+const sectionIds = sections.map(section => `#${section.id}`);
+
+// Hamburger menu interaction
+const iPhoneMedia = window.matchMedia("(max-width: 600px)");
+
+document.getElementById('hamburger').addEventListener('mouseup', showNavMenu);
+
 window.addEventListener('scroll', () => {
   updateCurrent();
-  adjustNavbar();
+  if(!iPhoneMedia.matches){
+    adjustNavbar();
+  }
 });
 
 navwrap.addEventListener('click', smoothScroll);
 
+let showNav = false;
+function showNavMenu(e) {
+  let navMenu = document.querySelector('.navbar-menu');
+
+  showNav = !showNav;
+  if(showNav){
+    navMenu.style.maxHeight = '1000px';
+  } else {
+    navMenu.style.maxHeight = '0';
+  }
+
+}
+
 function smoothScroll(e) {
   if(e.target.hasAttribute('href')){
-    const section = navLinks.indexOf(e.target);
+    const section = sectionIds.indexOf(e.target.getAttribute('href'));
     sections[section].scrollIntoView({
       behavior: "smooth",
       block: "start"
     });
+
+    if(iPhoneMedia.matches){
+      showNavMenu();
+    }
   }
   e.preventDefault();
 }
@@ -43,15 +70,23 @@ function updateCurrent() {
 function adjustNavbar() {
   if(window.scrollY > 0)
   {
-    // Shrink navbar and opaque background
-    navwrap.querySelector('.logo').style.height = '4rem';
-    navwrap.style.padding = '0.25rem 0';
-    navwrap.parentElement.parentElement.style.background = 'rgba(0,0,0,1)';
+    makeNavDark();
   }
   else {
-    // More padding and transparent
-    navwrap.querySelector('.logo').removeAttribute('style');
-    navwrap.removeAttribute('style');
-    navwrap.parentElement.parentElement.removeAttribute('style');
+    makeNavTransparent();
   }
+}
+
+function makeNavTransparent() {
+  // More padding and transparent
+  navwrap.querySelector('.logo').removeAttribute('style');
+  navwrap.removeAttribute('style');
+  navwrap.parentElement.parentElement.removeAttribute('style');
+}
+
+function makeNavDark(){
+  // Shrink navbar and opaque background
+  navwrap.querySelector('.logo').style.height = '3.5rem';
+  navwrap.style.padding = '0.25rem 0';
+  navwrap.parentElement.parentElement.style.background = 'rgba(0,0,0,1)';
 }

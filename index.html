@@ -15,8 +15,16 @@
     <div class="container">
       <div class="navbar-wrap py-s">
         <div class="logo flx-ctr">
-          <img src="./img/nelsi-logo-alpha.png" alt="Nelsi Logo">
+          <a href="#home">
+            <img src="./img/nelsi-logo-alpha.png" alt="Nelsi Logo">
+          </a>
+          <div id="hamburger">
+            <div class="middle-line"></div>
+            <div class="top-line"></div>
+            <div class="bottom-line"></div>
+          </div>
         </div>
+        
         <div class="navbar-menu">
           <ul class="flx-ctr">
             <li class="px-1"><a class="current" href="#home">Home</a></li>
@@ -45,60 +53,64 @@
   </header>
   <!-- End home -->
   <!-- Begin About -->
-  <section id="about" class="p-4">
+  <section id="about" class="p-2">
     <div class="container">
       <h2 class="section-title">About</h2>
       <div class="about-wrap grid gap-1">
-        <div class="info-1">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit commodi quos omnis rerum, enim doloribus reprehenderit deleniti ipsum aliquam?</p>
+        <div class="about-img m-1">
+          <img class="shadow" src="./img/nelsi-about.jpg" alt="Picture of Nelsi Pamela">
         </div>
-        <div class="info-2">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quasi alias, cum soluta id totam? Omnis exercitationem dolorum itaque numquam?</p>
+        <div class="info flx-ctr">
+          <div class="info-1">
+            <h4 class="txt-l">About Me</h4>
+            <p>My name is Nelsi, and I am a wellness bikini athlete, as well as a fitness life coach. I have gone on to many competitions and ranked top 5 amongst other hardworking women.</p>
+          </div>
+          <div class="info-2">
+            <h4 class="txt-l">About this site</h4>
+            <p>By using Instagram I'm able to share my passion for fitness culture and nutrition. This website is yet another outlet for sharing with a wider audience. Feel free to use the tools on this site, and follow me on Instagram!</p>
+          </div>
         </div>
-        <div class="steps">
+        <div class="steps mt-1">
+          <h4 class="txt-l">How do I become fit?</h4>
           <p>So what does it take to reach your fitness goal? There are three things:</p>
           <ul>
-            <li class="p-s"><i class="fas fa-clock brc fa-3x txt-ctr"></i> <span class="fs-3 mx-1">Commitment</span></li>
-            <li class="p-s"><i class="fas fa-utensils brc fa-3x txt-ctr"></i> <span class="fs-3 mx-1">Nutrition</span></li>
-            <li class="p-s"><i class="fas fa-dumbbell brc fa-3x txt-ctr"></i> <span class="fs-3 mx-1">Exercise</span></li>
+            <li class="p-s"><i class="fas fa-clock brc fa-2x txt-ctr"></i> <span class="fs-3 mx-1">Commitment</span></li>
+            <li class="p-s"><i class="fas fa-utensils brc fa-2x txt-ctr"></i> <span class="fs-3 mx-1">Nutrition</span></li>
+            <li class="p-s"><i class="fas fa-dumbbell brc fa-2x txt-ctr"></i> <span class="fs-3 mx-1">Exercise</span></li>
           </ul>
-        </div>
-        
-        <div class="about-img m-1">
-          <img src="./img/nelsi-about.jpg" alt="Picture of Nelsi Pamela">
         </div>
       </div>
     </div>
   </section>
   <!-- End About -->
   <!-- Begin commitment  -->
-  <section id="commitment" class="p-4">
+  <section id="commitment" class="p-2">
     <div class="container">
       <h2 class="section-title">Commitment</h2>
-      <p class="txt-ctr fs-1">How often do you stare at the mirror and tell yourself that something's got to change?
+      <p class="txt-ctr fs-1">What do you tell yourself when you stare at the mirror?
       </p>
       <p class="txt-ctr fs-1 mb-1">If you want to commit, you need to know what that means.</p>
       <div class="commit-wrap flx-ctr">
-        <div class="commit-photo">
-          <img src="./img/nelsi-mirror-commitment.jpg" alt="Nelsi looking at mirror">
+        <div class="commit-photo flex-1">
+          <img class="shadow" src="./img/nelsi-mirror-commitment.jpg" alt="Nelsi looking at mirror">
         </div>
-        <div class="commit-list grid">
-          <span class="m-1 p-s">
-            <i class="fas fa-bullseye fa-3x txt-ctr brc"></i>
+        <div class="commit-list flex-1 grid gap-1">
+          <span id="goal-icon" class="m-1 p-s">
+            <i class="fas fa-bullseye fa-2x txt-ctr brc"></i>
           </span>
           <div class="goal">
             <h3 class="fs-2">Goal</h3>
             <p>Do you want to be a runner? A lifter? Maybe you want to have a healthy <span id="open-bmi-tool" title="BMI Tool">BMI</span>. Find what you want to seize, and let it steer you along.</p>
           </div>
-          <span class="m-1 p-s">
-            <i class="fas fa-clock fa-3x txt-ctr brc"></i>
+          <span id="time-icon" class="m-1 p-s">
+            <i class="fas fa-clock fa-2x txt-ctr brc"></i>
           </span>
           <div class="time">
             <h3 class="fs-2">Time</h3>
             <p>Managing your time efficiently is key so that you can work on yourself while maintaining a balanced life.</p>
           </div>
-          <span class="m-1 p-s">
-            <i class="fas fa-dollar-sign fa-3x txt-ctr brc"></i>
+          <span id="money-icon" class="m-1 p-s">
+            <i class="fas fa-dollar-sign fa-2x txt-ctr brc"></i>
           </span>
           <div class="money">
             <h3 class="fs-2">Money</h3>
@@ -142,12 +154,12 @@
   </section>
   <!-- End commitment -->
   <!-- Begin Nutrition -->
-  <section id="nutrition" class="p-4">
+  <section id="nutrition" class="p-2">
     <div class="container">
       <h2 class="section-title">Nutrition</h2>
-      <p class="txt-ctr">Your diet is the most essential part of your routine, and for many it is also the hardest part.</p>
-      <p class="txt-ctr">You must start by considering what <span>macronutrients</span> are, and how they relate to 
-      <a class="macro-link" target="_blank" href="./macros.html">calories</a> </p>
+      <p class="txt-ctr">Balancing out macronutrients in your diet is crucial to your success.</p>
+      <p class="txt-ctr">What are macronutrients, and how do they relate to
+      <a class="macro-link" target="_blank" href="./macros.html">calories</a>? </p>
       <!-- Macros Wrap -->
       <div class="macros-wrap flx-ctr m-1">
         <!-- Carbs -->
@@ -155,7 +167,7 @@
           <div class="carbs-photo">
             <img class="" src="./img/cereal-oats.jpg" alt="Cereal with oats">
           </div>
-          <h3 class="fs-3">Carbohydrates</h3>
+          <h3 class="fs-3">Carbs</h3>
           <div id="carbs-info" class="fs-1">
             <ul class="discs p-2">
               <li>4 calories per gram</li>
@@ -194,53 +206,58 @@
           </div>
         </div>
       </div>
-      
     </div>
     
   </section>
   <!-- End Nutrition -->
   <!-- Begin Exercise -->
-  <section id="exercise" class="p-4">
+  <section id="exercise" class="p-2">
     <div class="container">
       <h2 class="section-title">Exercise</h2>
       <p class="txt-ctr">You grow strong muscles by exercising, not by watching others exercise.</p>
       <p class="txt-ctr mb-2">On the other hand, you need to lookout for injuries:</p>
       <div class="exercise-tips flx-ctr">
-        <div class="tips-info grid gap-1">
-          <i class="fas fa-dumbbell fa-3x txt-ctr"></i>
+        <div class="tips-photo">
+          <img class="shadow" src="./img/nelsi-action-dark-square.jpg" alt="Nelsi exercising">
+        </div>
+        <div class="tips-info grid gap-1 ">
+          <span class="form-icon p-s m-1">
+            <i class="fas fa-dumbbell fa-2x txt-ctr"></i>
+          </span>
           <div class="form-txt">
             <h3>Form over Weight</h3>
             <p>Focus on performing an exercise correctly to get all of its benefits and to minimize the likelihood of injury.</p>
           </div>
-          <i class="fas fa-balance-scale fa-3x txt-ctr"></i>
-          <div class="variety-info">
+          <span class="variety-icon p-s m-1">
+            <i class="fas fa-balance-scale fa-2x txt-ctr"></i>
+          </span>
+          <div class="variety-txt">
             <h3>Incorporate variety</h3>
             <p>Balance out your routine by targetting different muscle groups. Overworking a muscle group repeateadly may lead to injury.</p>
           </div>
-          <i class="fas fa-bed fa-3x txt-ctr"></i>
-          <div class="rest-info">
+          <span class="rest-icon p-s m-1">
+            <i class="fas fa-bed fa-2x txt-ctr"></i>
+          </span>
+          <div class="rest-txt">
             <h3>Rest sufficiently</h3>
-            <p>You need to rest to allow your muscle to heal. Resting is also important because it is the time during which muscles grow.</p>
+            <p>Schedule rest days in your routine. Resting allows your muscles to heal, and it is the time during which they grow.</p>
           </div>
-        </div>
-        <div class="tips-photo">
-          <img src="./img/nelsi-action-dark-square.jpg" alt="Nelsi exercising">
         </div>
       </div>
     </div>
   </section>
   <!-- End Exercise -->
   <!-- Begin contact -->
-  <section id="contact" class="p-4">
+  <section id="contact" class="p-2">
     <div class="container">
       <h2 class="section-title">Contact Us</h2>
       <div class="contact-wrap flx-ctr">
         <div class="contact-img-wrap flex-1 px-1 pt-1">
-          <img src="./img/nelsi-contact-square.jpg" alt="Nelsi in uniform">
+          <img class="shadow" src="./img/nelsi-contact-square.jpg" alt="Nelsi in uniform">
         </div>
         <div class="contact-form-wrap flex-1 px-1">
-          <h2 class="">Ready for your next move?</h2>
-          <p class="p-1">Your body is in good hands. Let's work on your personalize plan and achieve your goal!</p>
+          <h2 class="">Are you ready?</h2>
+          <p class="p-1">Your body is in good hands. Let's work on your personalized plan and achieve your goal!</p>
           <form name="contact" method="POST" data-netlify="true">
             <div class="name-input">
               <input type="text" for="name" name="name" class="data-input" placeholder="Full Name">
@@ -271,20 +288,19 @@
           <p>&copy; 2019 Nelsi Fitness. All Rights Reserved. </p>
         </div>
         <div class="footer-tools">
-          <p>Resources</p>
+          <p class="fs-2">Resources</p>
           <a href="./macros.html" target="_blank">
             <i class="fas fa-drumstick-bite brc fa-2x"></i>
           </a>
           <a href="#commitment">
             <i class="fas fa-weight brc fa-2x"></i>
         </a>
-          
         </div>
         <!-- <div class="footer-logo flex-1"> -->
           <!-- <img src="./img/nelsi-logo-alpha.png" alt="Nelsi Logo"> -->
         <!-- </div> -->
         <div class="social">
-          <p class="">Connect with us!</p>
+          <p class="fs-2">Connect with us!</p>
           <a href="https://www.instagram.com/nelsipamela/" target="_blank">
             <i class="fab fa-instagram brc fa-2x"></i>
           </a>

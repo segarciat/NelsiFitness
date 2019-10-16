@@ -1,3 +1,5 @@
+const iPadMedia = window.matchMedia("(max-width: 1200px)");
+
 const bmiInputs = document.querySelectorAll('#bmi-tool input[type="number"]');
 const bmiSubmit = document.querySelector('#bmi-submit');
 const bmiTool = document.querySelector('#bmi-tool');
@@ -80,10 +82,18 @@ function clearInputs() {
   validateInputs();
 }
 
+let vertOffset;
+if(iPadMedia.matches){
+  vertOffset = '20%';
+}
+else {
+  vertOffset = '30%';
+}
+
 const slideUp = [
   [
     {top: '-50%'},
-    {top: '30%'}
+    {top: vertOffset}
   ], 
   {
     duration: 500,
@@ -93,7 +103,7 @@ const slideUp = [
 
 const slideDown = [
   [
-    {top: '30%'},
+    {top: vertOffset},
     {top: '-50%'}
   ], 
   {
