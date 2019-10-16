@@ -88,7 +88,7 @@ if(iPadMedia.matches){
   vertOffset = '25%';
 }
 else if(phoneMedia.matches){
-  vertOffset = '45%';
+  vertOffset = '90%';
   } else {
   vertOffset = '30%';
 }
