@@ -1,4 +1,5 @@
 const iPadMedia = window.matchMedia("(max-width: 1200px)");
+const phoneMedia = window.matchMedia("(max-width: 750px)");
 
 const bmiInputs = document.querySelectorAll('#bmi-tool input[type="number"]');
 const bmiSubmit = document.querySelector('#bmi-submit');
@@ -84,9 +85,11 @@ function clearInputs() {
 
 let vertOffset;
 if(iPadMedia.matches){
-  vertOffset = '20%';
+  vertOffset = '25%';
 }
-else {
+else if(phoneMedia.matches){
+  vertOffset = '45%';
+  } else {
   vertOffset = '30%';
 }
 
