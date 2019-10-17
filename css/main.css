@@ -663,17 +663,17 @@ footer {
   nav {
     background: #000; }
     nav .navbar-wrap {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content: space-between;
+      position: relative;
+      display: block;
       padding: 0.25rem; }
       nav .navbar-wrap .logo {
         height: 4rem; }
       nav .navbar-wrap #hamburger {
         display: block;
         cursor: pointer;
-        position: relative;
-        left: 70%; }
+        position: absolute;
+        right: 5%;
+        top: 20px; }
     nav .navbar-menu {
       max-height: 0;
       overflow: hidden;
