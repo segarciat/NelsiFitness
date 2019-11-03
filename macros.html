@@ -1,164 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/a465367bb1.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" type="image/x-icon" href="./img/nelsi-logo.ico">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Nelsi Pamela | Fitness Trainer</title>
-</head>
-<body>
-  <nav id="macro-nav">
-    <div class="container">
-      <div class="navbar-wrap py-s">
-        <div class="logo flx-ctr">
-          <a href="./index.html"><img src="./img/nelsi-logo-alpha.png" alt="Nelsi Logo"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/a465367bb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/nelsi-logo.ico" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Nelsi Pamela | Fitness Trainer</title>
+  </head>
+  <body>
+    <nav id="macro-nav">
+      <div class="container">
+        <div class="navbar-wrap py-s">
+          <div class="logo flx-ctr">
+            <a href="./index.html"
+              ><img src="./img/nelsi-logo-alpha.png" alt="Nelsi Logo"
+            /></a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <!-- End nav -->
-  <section id="macro-tool">
-    <div class="container">
-      <div id="macro-tool-info">
-        <h1>Macronutrient Calculator</h1>
-        <h2 class="txt-l">About</h2>
-        <p>Welcome to Nelsi Pamela's macronutrient tool. Find out your
-          daily caloric goal for maintaining your weight, as well as a breakdown by macronutrient!
-        </p>
-        <h2 class="txt-l">What happens to my information?</h2>
-        <p>
-          The information you provide is used to display the results. The information may be saved by clicking Save. This will make the results
-          available next time you use the tool, but we do not store this information, so your information is safe. You may also clear the
-          information you've saved at any time.
-        </p>
-      </div>
-      <div id="macro-app" class="flx-ctr">
-        <div class="macro-input brd-1 mt-1 mb-1 shadow">
-          <h3 class="">Personal Information</h3>
-          <form class="p-1">
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input id="user-name" class="data-input" type="text" name="name">
-            </div>
-            <div class="form-group">
-              <label for="sex">Sex</label>
-              <input type="radio" name="sex" value="male" checked> Male
-              <input class="ml-1" type="radio" name="sex" value="female"> Female
-            </div>
-            <div class="form-group">
-              <label for="age">Age</label>
-              <input class="data-input"type="number" id="age" name="age">
-            </div>
-            <div class="form-group">
-              <label for="height">Height</label>
-              <input class="data-input"type="number" id="feet" name="height"><sub class="mr-1"> ft</sub>
-              <input class="data-input"type="number" id="inches" name="height"><sub> in</sub>
-            </div>
-            <div class="form-group">
-              <label for="height">Weight</label>
-              <input class="data-input"type="number" id="weight" name="weight"><sub> lbs</sub>
-            </div>
-            <div class="form-group">
-              <label for="frequency">How often do you attend the gym each week?</label>
-              <select name="frequency" id="frequency">
-                <option value="none">Never</option>
-                <option value="low">1 to 2 times</option>
-                <option value="moderate">3 to 5 times</option>
-                <option value="high">6 or more</option>
-              </select>
-            </div>
-            <input id="calc-btn" class="disabled-btn mt-1" type="submit" value="Calculate" disabled>
-            <div class="buttons-wrap">
-              <input class="edit-btn mt-1" type="submit" value="Update">
-              <input class="delete-btn ml-s mt-1" type="submit" value="Delete">
-              <input class="cancel-btn" type="submit" value="Cancel">
-            </div>
-          </form>
+    </nav>
+    <!-- End nav -->
+    <section id="macro-tool">
+      <div class="container">
+        <div id="macro-tool-info">
+          <h1>Macronutrient Calculator</h1>
+          <h2 class="txt-l">About</h2>
+          <p>
+            Welcome to Nelsi Pamela's macronutrient tool. The tool below makes
+            use of the Harris-Benedict equations to estimate your daily caloric
+            expenditure.
+          </p>
+          <h2 class="txt-l">Instructions</h2>
+          <ul class="discs px-1">
+            <li>Fill out every entry to enable the Calculate button.</li>
+            <li>Clicking Clear will remove your information from the form.</li>
+            <li>Clicking Save will save the information for future visits.</li>
+            <li>
+              Click the Filter Users input to look through your saved users and
+              access them.
+            </li>
+            <li>Select a user to bring up their information.</li>
+            <li>Update a user's information by clicking Update.</li>
+            <li>
+              If you don't wish to have a user's information stored for future
+              visits, select that user and click Delete.
+            </li>
+          </ul>
         </div>
-        <div class="macro-output brd-1 m-1 shadow">
-          <h3>Macronutrient Calculations</h3>
-          <div class="output-wrap p-2 grid gap-1">
-            <div id="filter-users">
-              <input id="filter-input" class="data-input" type="text" name="filter" placeholder="Filter users">
-              <ul id="user-list" class="shadow fs-m p-m"></ul>
-            </div>
-            <div class="calorie-wrap">
-              <h4 class="fs-3">----</h4>
-              <h4 class="fs-2">Daily Caloric Goal</h4>
-            </div>
-            <div id="piechart">
-            </div>
-            <div class="table-wrap">
-              <table class="shadow">
-                <thead>
-                  <tr>
-                    <th class="p-1 txt-ctr">Macro</th>
-                    <th class="p-1 txt-ctr">Calories</th>
-                    <th class="p-1 txt-ctr">Amount (g)</th>
-                    <th class="p-1 txt-ctr">Percentage</th>
-                  </tr>
-                </thead>
-                <tbody id="macro-data">
-                  <tr id="carbs">
-                    <td class="p-1 txt-ctr">Carbs</td>
-                    <td class="p-1 txt-ctr"></td>
-                    <td class="p-1 txt-ctr"></td>
-                    <td class="p-1 txt-ctr"></td>
-                  </tr>
-                  <tr id="protein">
-                    <td class="p-1 txt-ctr">Protein</td>
-                    <td class="p-1 txt-ctr"></td>
-                    <td class="p-1 txt-ctr"></td>
-                    <td class="p-1 txt-ctr"></td>
-                  </tr>
-                  <tr id="fat">
-                    <td class="p-1 txt-ctr">Fat</td>
-                    <td class="p-1 txt-ctr"></td>
-                    <td class="p-1 txt-ctr"></td>
-                    <td class="p-1 txt-ctr"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <input id="save-btn" class="disabled-btn mr-1 mt-1" type="submit" value="Save" disabled>
-              <input id="clear-btn" class="disabled-btn mt-1" type="submit" value="Clear" disabled>
+        <div id="macro-app" class="flx-ctr">
+          <div class="macro-input brd-1 mt-1 mb-1 shadow">
+            <h3 class="">Personal Information</h3>
+            <form class="p-1">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  id="user-name"
+                  class="data-input"
+                  type="text"
+                  name="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sex">Sex</label>
+                <input type="radio" name="sex" value="male" checked /> Male
+                <input class="ml-1" type="radio" name="sex" value="female" />
+                Female
+              </div>
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input class="data-input" type="number" id="age" name="age" />
+              </div>
+              <div class="form-group">
+                <label for="height">Height</label>
+                <input
+                  class="data-input"
+                  type="number"
+                  id="feet"
+                  name="height"
+                /><sub class="mr-1"> ft</sub>
+                <input
+                  class="data-input"
+                  type="number"
+                  id="inches"
+                  name="height"
+                /><sub> in</sub>
+              </div>
+              <div class="form-group">
+                <label for="height">Weight</label>
+                <input
+                  class="data-input"
+                  type="number"
+                  id="weight"
+                  name="weight"
+                /><sub> lbs</sub>
+              </div>
+              <div class="form-group">
+                <label for="frequency"
+                  >How often do you attend the gym each week?</label
+                >
+                <select name="frequency" id="frequency">
+                  <option value="none">Never</option>
+                  <option value="low">1 to 2 times</option>
+                  <option value="moderate">3 to 5 times</option>
+                  <option value="high">6 or more</option>
+                </select>
+              </div>
+              <input
+                id="calc-btn"
+                class="disabled-btn mt-1"
+                type="submit"
+                value="Calculate"
+                disabled
+              />
+              <div class="buttons-wrap">
+                <input class="edit-btn mt-1" type="submit" value="Update" />
+                <input
+                  class="delete-btn ml-s mt-1"
+                  type="submit"
+                  value="Delete"
+                />
+                <input class="cancel-btn" type="submit" value="Cancel" />
+              </div>
+            </form>
+          </div>
+          <div class="macro-output brd-1 m-1 shadow">
+            <h3>Macronutrient Calculations</h3>
+            <div class="output-wrap p-2 grid gap-1">
+              <div id="filter-users">
+                <input
+                  id="filter-input"
+                  class="data-input"
+                  type="text"
+                  name="filter"
+                  placeholder="Filter users"
+                />
+                <ul id="user-list" class="shadow fs-m p-m"></ul>
+              </div>
+              <div class="calorie-wrap">
+                <h4 class="fs-3">----</h4>
+                <h4 class="fs-2">Daily Caloric Goal</h4>
+              </div>
+              <div id="piechart"></div>
+              <div class="table-wrap">
+                <table class="shadow">
+                  <thead>
+                    <tr>
+                      <th class="p-1 txt-ctr">Macro</th>
+                      <th class="p-1 txt-ctr">Calories</th>
+                      <th class="p-1 txt-ctr">Amount (g)</th>
+                      <th class="p-1 txt-ctr">Percentage</th>
+                    </tr>
+                  </thead>
+                  <tbody id="macro-data">
+                    <tr id="carbs">
+                      <td class="p-1 txt-ctr">Carbs</td>
+                      <td class="p-1 txt-ctr"></td>
+                      <td class="p-1 txt-ctr"></td>
+                      <td class="p-1 txt-ctr"></td>
+                    </tr>
+                    <tr id="protein">
+                      <td class="p-1 txt-ctr">Protein</td>
+                      <td class="p-1 txt-ctr"></td>
+                      <td class="p-1 txt-ctr"></td>
+                      <td class="p-1 txt-ctr"></td>
+                    </tr>
+                    <tr id="fat">
+                      <td class="p-1 txt-ctr">Fat</td>
+                      <td class="p-1 txt-ctr"></td>
+                      <td class="p-1 txt-ctr"></td>
+                      <td class="p-1 txt-ctr"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <input
+                  id="save-btn"
+                  class="disabled-btn mr-1 mt-1"
+                  type="submit"
+                  value="Save"
+                  disabled
+                />
+                <input
+                  id="clear-btn"
+                  class="disabled-btn mt-1"
+                  type="submit"
+                  value="Clear"
+                  disabled
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Begin footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-wrap flx-ctr">
-        <div class="copyright flex-1">
-          <p>&copy; 2019 Nelsi Fitness. All Rights Reserved. </p>
-        </div>
-        <!-- <div class="footer-logo flex-1"> -->
+    </section>
+    <!-- Begin footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-wrap flx-ctr">
+          <div class="copyright flex-1">
+            <p>&copy; 2019 Nelsi Fitness. All Rights Reserved.</p>
+          </div>
+          <!-- <div class="footer-logo flex-1"> -->
           <!-- <img src="./img/nelsi-logo-alpha.png" alt="Nelsi Logo"> -->
-        <!-- </div> -->
-        <div class="social">
-          <p class="">Connect with us!</p>
-          <a href="https://www.instagram.com/nelsipamela/" target="_blank">
-            <i class="fab fa-instagram brc fa-2x"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/nelsigarcia/" target="_blank">
-            <i class="fab fa-linkedin brc fa-2x"></i>
-          </a>
-          <a href="https://github.com/sergentserg" target="_blank">
-            <i class="fab fa-github brc fa-2x"></i>
-          </a>
+          <!-- </div> -->
+          <div class="social">
+            <p class="">Connect with us!</p>
+            <a href="https://www.instagram.com/nelsipamela/" target="_blank">
+              <i class="fab fa-instagram brc fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nelsigarcia/" target="_blank">
+              <i class="fab fa-linkedin brc fa-2x"></i>
+            </a>
+            <a href="https://github.com/sergentserg" target="_blank">
+              <i class="fab fa-github brc fa-2x"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- End footer -->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <!-- <script src="./js/piechart.js"></script> -->
-  <script src="./js/macros.js"></script>
-</body>
+    </footer>
+    <!-- End footer -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <!-- <script src="./js/piechart.js"></script> -->
+    <script src="./js/macros.js"></script>
+  </body>
 </html>

@@ -6,7 +6,7 @@
   font-size: 3rem; }
 
 .fs-m {
-  font-size: 0.80rem; }
+  font-size: 0.8rem; }
 
 .fs-1 {
   font-size: 1.1rem; }
@@ -137,10 +137,10 @@
     background-color: #1668A6; }
 
 .edit-btn {
-  background: #E5AD14;
+  background: #e5ad14;
   border-radius: 4px; }
   .edit-btn:hover {
-    background: #F4B305; }
+    background: #f4b305; }
 
 .delete-btn {
   background: rgba(255, 0, 0, 0.75);
@@ -167,7 +167,7 @@
 .discs {
   list-style-type: disc; }
 
-.current::before, nav .navbar-menu a::before {
+#current::before, nav .navbar-menu a::before {
   content: "";
   position: absolute;
   border-bottom: 2px solid #fdee21;
@@ -176,7 +176,7 @@
   left: 0;
   bottom: -20%;
   height: 2px;
-  transition: all 1s ease-in-out; }
+  transition: all 0.5s ease-in-out; }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
