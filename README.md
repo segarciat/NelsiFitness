@@ -1,6 +1,6 @@
 # About
 
-Welcome! My name is Sergio Garcia Tapia. This project is a website for a biki wellness athlete, who happens to be my sister. I made this with the intention of helping her spread her passion for fitness culture. It was a solo project, but I am grateful to have had some feedback about the layout from Sam Dedes.
+Welcome! My name is Sergio Garcia Tapia. This project is a website for a biki wellness athlete, who happens to be my sister. I made this with the intention of helping her spread her passion for fitness culture. It was a solo project, but I am grateful to have had some feedback about the layout from Sam Dedes. I even deployed the site, and its live at: https://silly-shockley-d9144a.netlify.com/
 
 ## What's in the website.
 
