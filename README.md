@@ -4,9 +4,10 @@ Welcome! My name is Sergio Garcia Tapia. This project is a website for a biki we
 
 ## What's in the website.
 
-The content is mostly generic, but it has an information feel, meant to motivate visitors of the page to start a routine in which they incorporate exercise and give more importance to nutrition. It also links to Nelsi's instagram page, where she regularly shares her everyday routine through Instagram stories. 
+The content is mostly generic, but it has an information feel, meant to motivate visitors of the page to start a routine in which they incorporate exercise and give more importance to nutrition. It also links to Nelsi's instagram page, where she regularly shares her everyday routine through Instagram stories.
 
 As for what can be found, it has:
+
 - A single page with about 7 sections
 - A simple BMI modal tool.
 - A macro-calculator form application
@@ -21,7 +22,7 @@ The Macro Tool was an important part of the project for me, and it's one that to
 
 ## Deployment
 
-I deployed the site with Netlify, a free service! 
+I deployed the site with Netlify, a free service!
 
 ## Questions?
 

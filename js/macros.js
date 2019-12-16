@@ -170,7 +170,6 @@ const UICtrl = (function(UserCtrl) {
 
       // Enable button if valid
       if (editState) {
-        ("Toggling update btn...");
         toggleButtons(valid, [UISelectors.updateBtn]);
       } else {
         toggleButtons(valid, [UISelectors.calcBtn]);
@@ -341,9 +340,7 @@ const UICtrl = (function(UserCtrl) {
     },
     toggleEditState: function() {
       editState = !editState;
-      if (editState) {
-        ("Entering edit state");
-      }
+    
       let updateBtn = document.querySelector(UISelectors.updateBtn);
       let deleteBtn = document.querySelector(UISelectors.deleteBtn);
       let cancelBtn = document.querySelector(UISelectors.cancelBtn);
@@ -393,7 +390,6 @@ const AppCtrl = (function(StorageCtrl, UICtrl, UserCtrl) {
 
   // Load all event listeners
   const loadEventListeners = function() {
-    ("Initializing App...");
 
     // Initializing google charts
     google.charts.load("current", { packages: ["corechart"] });
@@ -449,7 +445,6 @@ const AppCtrl = (function(StorageCtrl, UICtrl, UserCtrl) {
 
   const userCalcSubmit = function(e) {
     // Is button enabled? No need to check, event won't work if disabled.
-    ("Calculate Macros...");
 
     // Obtain provided info
     const userInfo = UICtrl.getInputValues();
@@ -473,7 +468,6 @@ const AppCtrl = (function(StorageCtrl, UICtrl, UserCtrl) {
   };
 
   const userSaveSubmit = function(e) {
-    ("Save data...");
 
     // Push new user -- by default it's the current user
     UserCtrl.addNewUser();
@@ -489,7 +483,6 @@ const AppCtrl = (function(StorageCtrl, UICtrl, UserCtrl) {
   };
 
   const userClearSubmit = function(e) {
-    ("Clearing Data...");
 
     // Clear input and output data
     UICtrl.clearAllData();
@@ -501,7 +494,6 @@ const AppCtrl = (function(StorageCtrl, UICtrl, UserCtrl) {
   };
 
   const userUpdateSubmit = function(e) {
-    ("Update user...");
 
     let updatedUser = {};
 
