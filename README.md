@@ -1,6 +1,6 @@
 # NelsiFitness
 
-A mockup personal trainer site based on a real personal trainer.
+A mockup personal trainer site based on a real personal trainer, live https://nelsipamela.fit/.
 
 ## Description
 
