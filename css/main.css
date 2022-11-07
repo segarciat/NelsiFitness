@@ -1,173 +1,227 @@
 .container {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .section-title {
-  font-size: 3rem; }
+  font-size: 3rem;
+}
 
 .fs-m {
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+}
 
 .fs-1 {
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+}
 
 .fs-2 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .fs-3 {
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .fs-4 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+}
 
 .fs-5 {
-  font-size: 3rem; }
+  font-size: 3rem;
+}
 
 .m-1 {
-  margin: 1rem; }
+  margin: 1rem;
+}
 
 .mx-1 {
-  margin: 0 1rem; }
+  margin: 0 1rem;
+}
 
 .ml-1 {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+}
 
 .ml-s {
-  margin-left: 0.25rem; }
+  margin-left: 0.25rem;
+}
 
 .mr-1 {
-  margin-right: 1rem; }
+  margin-right: 1rem;
+}
 
 .mb-1 {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+}
 
 .mb-2 {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 
 .mb-3 {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+}
 
 .mt-1 {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+}
 
 .p-s {
-  padding: 0.5rem; }
+  padding: 0.5rem;
+}
 
 .p-m {
-  padding: 0.75rem; }
+  padding: 0.75rem;
+}
 
 .p-1 {
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 .p-2 {
-  padding: 2rem; }
+  padding: 2rem;
+}
 
 .p-4 {
-  padding: 4rem; }
+  padding: 4rem;
+}
 
 .px-1 {
-  padding: 0 1rem; }
+  padding: 0 1rem;
+}
 
 .py-s {
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+}
 
 .pt-1 {
-  padding-top: 1rem; }
+  padding-top: 1rem;
+}
 
 .pb-1 {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+}
 
 .txt-ctr {
-  text-align: center; }
+  text-align: center;
+}
 
 .txt-l {
-  text-align: left; }
+  text-align: left;
+}
 
 .txt-r {
-  text-align: right; }
+  text-align: right;
+}
 
 .brd-1 {
-  border: 1px rgba(0, 0, 0, 0.1) solid; }
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+}
 
 .b-bot {
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eee;
+}
 
 .brc {
-  border-radius: 100%; }
+  border-radius: 100%;
+}
 
 .shadow {
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
 
 .flx-ctr {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+}
 
 .flex-1 {
-  flex: 1; }
+  flex: 1;
+}
 
 .grid {
-  display: grid; }
+  display: grid;
+}
 
 .gap-1 {
-  grid-gap: 1rem; }
+  grid-gap: 1rem;
+}
 
 .gap-2 {
-  grid-gap: 2rem; }
+  grid-gap: 2rem;
+}
 
 .grid-col-3 {
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .grid-row-3 {
-  grid-template-rows: repeat(3, 1fr); }
+  grid-template-rows: repeat(3, 1fr);
+}
 
-.btn, .edit-btn, .delete-btn, .cancel-btn, .disabled-btn {
+.disabled-btn, .cancel-btn, .delete-btn, .edit-btn, .btn {
   display: inline-block;
   cursor: pointer;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
-  box-shadow: 0 0 3px black;
-  font-weight: bold; }
-  .btn:focus, .edit-btn:focus, .delete-btn:focus, .cancel-btn:focus, .disabled-btn:focus {
-    outline: 0; }
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+  font-weight: bold;
+}
+.disabled-btn:focus, .cancel-btn:focus, .delete-btn:focus, .edit-btn:focus, .btn:focus {
+  outline: 0;
+}
 
 .btn {
-  background-color: #1977BE; }
-  .btn:hover {
-    background-color: #1668A6; }
+  background-color: #1977BE;
+}
+.btn:hover {
+  background-color: #1668A6;
+}
 
 .edit-btn {
   background: #e5ad14;
-  border-radius: 4px; }
-  .edit-btn:hover {
-    background: #f4b305; }
+  border-radius: 4px;
+}
+.edit-btn:hover {
+  background: #f4b305;
+}
 
 .delete-btn {
   background: rgba(255, 0, 0, 0.75);
-  border-radius: 4px; }
-  .delete-btn:hover {
-    background: rgba(255, 0, 0, 0.8); }
+  border-radius: 4px;
+}
+.delete-btn:hover {
+  background: rgba(255, 0, 0, 0.8);
+}
 
 .cancel-btn {
   background: rgba(255, 0, 0, 0.75);
-  border-radius: 4px; }
-  .cancel-btn:hover {
-    background: rgba(255, 0, 0, 0.8); }
+  border-radius: 4px;
+}
+.cancel-btn:hover {
+  background: rgba(255, 0, 0, 0.8);
+}
 
 .disabled-btn {
   background: grey;
-  cursor: default; }
+  cursor: default;
+}
 
 .cancel-btn {
-  background: #afafaf;
-  cursor: pointer; }
-  .cancel-btn:hover {
-    background: #969696; }
+  background: rgb(175, 175, 175);
+  cursor: pointer;
+}
+.cancel-btn:hover {
+  background: rgb(150, 150, 150);
+}
 
 .discs {
-  list-style-type: disc; }
+  list-style-type: disc;
+}
 
-#current::before, nav .navbar-menu a::before {
+nav .navbar-menu a::before, #current::before {
   content: "";
   position: absolute;
   border-bottom: 2px solid #fdee21;
@@ -176,15 +230,18 @@
   left: 0;
   bottom: -20%;
   height: 2px;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+}
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0; }
+  margin: 0;
+}
 
-input[type="number"] {
-  -moz-appearance: textfield; }
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 .data-input {
   background: #fff;
@@ -192,34 +249,42 @@ input[type="number"] {
   border: 1px solid #ddd;
   padding: 0.75rem;
   margin-bottom: 1.5rem;
-  border-radius: 2rem; }
-  .data-input:focus {
-    box-shadow: 0 0 1pt 1pt #1977BE;
-    outline: 0; }
+  border-radius: 2rem;
+}
+.data-input:focus {
+  box-shadow: 0 0 1pt 1pt #1977BE;
+  outline: 0;
+}
 
 label {
-  display: block; }
+  display: block;
+}
 
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+}
 
 tr {
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eee;
+}
 
 .success {
   background: lightgreen;
   color: green;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   background: #fff;
   font-family: "Arvo", serif;
-  line-height: 2; }
+  line-height: 2;
+}
 
 h1,
 h2,
@@ -227,15 +292,19 @@ h3,
 h4,
 h5,
 h6 {
-  text-align: center; }
+  text-align: center;
+}
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 a {
-  text-decoration: none; }
-  a:hover, a:active, a:visited {
-    text-decoration: none; }
+  text-decoration: none;
+}
+a:hover, a:active, a:visited {
+  text-decoration: none;
+}
 
 nav {
   color: #fff;
@@ -244,152 +313,195 @@ nav {
   position: fixed;
   z-index: 2;
   width: 100%;
-  transition: background-color 0.5s, height 0.5s; }
-  nav .navbar-wrap {
-    position: relative;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    transition: padding 0.5s; }
-    nav .navbar-wrap .logo {
-      position: relative;
-      height: 5rem;
-      align-items: center;
-      transition: height 0.5s;
-      justify-content: space-between; }
-      nav .navbar-wrap .logo a {
-        position: relataive;
-        height: 100%; }
-        nav .navbar-wrap .logo a img {
-          position: relative;
-          z-index: -1;
-          height: 100%; }
-  nav .navbar-menu {
-    position: relative; }
-    nav .navbar-menu a {
-      text-decoration: none;
-      color: #fff;
-      position: relative; }
-      nav .navbar-menu a::before {
-        left: 50%;
-        width: 0; }
-      nav .navbar-menu a:hover::before {
-        width: 100%;
-        left: 0; }
-  nav #hamburger {
-    display: none;
-    position: relative;
-    right: 5%;
-    height: 40px;
-    width: 40px; }
-    nav #hamburger .middle-line,
-    nav #hamburger .top-line,
-    nav #hamburger .bottom-line {
-      position: absolute;
-      left: 0;
-      background: #fff;
-      width: 100%;
-      height: 3px;
-      border-radius: 1rem; }
-    nav #hamburger .middle-line {
-      top: 40%; }
-    nav #hamburger .top-line {
-      top: 10%; }
-    nav #hamburger .bottom-line {
-      top: 70%; }
+  transition: background-color 0.5s, height 0.5s;
+}
+nav .navbar-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding 0.5s;
+}
+nav .navbar-wrap .logo {
+  position: relative;
+  height: 5rem;
+  align-items: center;
+  transition: height 0.5s;
+  justify-content: space-between;
+}
+nav .navbar-wrap .logo a {
+  position: relataive;
+  height: 100%;
+}
+nav .navbar-wrap .logo a img {
+  position: relative;
+  z-index: -1;
+  height: 100%;
+}
+nav .navbar-menu {
+  position: relative;
+}
+nav .navbar-menu a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+nav .navbar-menu a::before {
+  left: 50%;
+  width: 0;
+}
+nav .navbar-menu a:hover::before {
+  width: 100%;
+  left: 0;
+}
+nav #hamburger {
+  display: none;
+  position: relative;
+  right: 5%;
+  height: 40px;
+  width: 40px;
+}
+nav #hamburger .middle-line,
+nav #hamburger .top-line,
+nav #hamburger .bottom-line {
+  position: absolute;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 3px;
+  border-radius: 1rem;
+}
+nav #hamburger .middle-line {
+  top: 40%;
+}
+nav #hamburger .top-line {
+  top: 10%;
+}
+nav #hamburger .bottom-line {
+  top: 70%;
+}
 
 header {
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/nelsi-exercise.jpg") no-repeat center center/cover;
-  height: 100vh; }
-  header .container {
-    position: relative;
-    height: 100%; }
-    header .container .home-content {
-      position: absolute;
-      left: 10%;
-      bottom: 30%; }
-      header .container .home-content h1,
-      header .container .home-content h2,
-      header .container .home-content p {
-        text-align: left; }
-      header .container .home-content p {
-        width: 80%; }
-      header .container .home-content a {
-        background-color: rgba(0, 0, 0, 0);
-        border: 1px solid #fff;
-        border-radius: 0;
-        transition: all 0.5s; }
-      header .container .home-content #more,
-      header .container .home-content #follow {
-        display: inline-block; }
-      header .container .home-content #more:hover {
-        border: 1px solid #fdee21; }
-      header .container .home-content #follow:hover {
-        border: 1px solid #c13584; }
+  height: 100vh;
+}
+header .container {
+  position: relative;
+  height: 100%;
+}
+header .container .home-content {
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+}
+header .container .home-content h1,
+header .container .home-content h2,
+header .container .home-content p {
+  text-align: left;
+}
+header .container .home-content p {
+  width: 80%;
+}
+header .container .home-content a {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 0;
+  transition: all 0.5s;
+}
+header .container .home-content #more,
+header .container .home-content #follow {
+  display: inline-block;
+}
+header .container .home-content #more:hover {
+  border: 1px solid #fdee21;
+}
+header .container .home-content #follow:hover {
+  border: 1px solid #c13584;
+}
 
 #about {
-  color: black; }
-  #about .about-wrap {
-    grid-template-areas: "info info about-img about-img" "steps steps about-img about-img" "steps steps about-img about-img" "steps steps about-img about-img"; }
-    #about .about-wrap p {
-      font-size: 1.05rem; }
-    #about .about-wrap .info {
-      grid-area: info; }
-    #about .about-wrap .steps {
-      grid-area: steps;
-      line-height: 3rem; }
-      #about .about-wrap .steps i {
-        background: #444;
-        color: #fff;
-        line-height: 4rem;
-        height: 4rem;
-        width: 4rem; }
-    #about .about-wrap .about-img {
-      grid-area: about-img; }
-      #about .about-wrap .about-img img {
-        width: 100%; }
+  color: black;
+}
+#about .about-wrap {
+  grid-template-areas: "info info about-img about-img" "steps steps about-img about-img" "steps steps about-img about-img" "steps steps about-img about-img";
+}
+#about .about-wrap p {
+  font-size: 1.05rem;
+}
+#about .about-wrap .info {
+  grid-area: info;
+}
+#about .about-wrap .steps {
+  grid-area: steps;
+  line-height: 3rem;
+}
+#about .about-wrap .steps i {
+  background: #444;
+  color: #fff;
+  line-height: 4rem;
+  height: 4rem;
+  width: 4rem;
+}
+#about .about-wrap .about-img {
+  grid-area: about-img;
+}
+#about .about-wrap .about-img img {
+  width: 100%;
+}
 
 #commitment .commit-wrap {
-  justify-content: space-evenly; }
-  #commitment .commit-wrap .commit-photo {
-    order: 1; }
-    #commitment .commit-wrap .commit-photo img {
-      width: 100%; }
-  #commitment .commit-wrap .commit-list {
-    order: 2;
-    flex: 1;
-    grid-template-areas: "goal-sym goal-txt" "time-sym time-txt" "money-sym money-txt"; }
-    #commitment .commit-wrap .commit-list #goal-icon {
-      grid-area: goal-sym; }
-    #commitment .commit-wrap .commit-list .goal {
-      grid-area: goal-txt; }
-    #commitment .commit-wrap .commit-list #time-icon {
-      grid-area: time-sym; }
-    #commitment .commit-wrap .commit-list .time {
-      grid-area: time-txt; }
-    #commitment .commit-wrap .commit-list #money-icon {
-      grid-area: money-sym; }
-    #commitment .commit-wrap .commit-list .money {
-      grid-area: money-txt; }
-    #commitment .commit-wrap .commit-list h3 {
-      text-align: left; }
-    #commitment .commit-wrap .commit-list span i {
-      background: #444;
-      color: #fff;
-      height: 4rem;
-      width: 4rem;
-      line-height: 4rem;
-      transform: rotate(0);
-      transition: transform 0.5s ease-in-out, color 0.5s, background-color 0.5s; }
-      #commitment .commit-wrap .commit-list span i:hover {
-        transform: rotate(360deg); }
-
+  justify-content: space-evenly;
+}
+#commitment .commit-wrap .commit-photo {
+  order: 1;
+}
+#commitment .commit-wrap .commit-photo img {
+  width: 100%;
+}
+#commitment .commit-wrap .commit-list {
+  order: 2;
+  flex: 1;
+  grid-template-areas: "goal-sym goal-txt" "time-sym time-txt" "money-sym money-txt";
+}
+#commitment .commit-wrap .commit-list #goal-icon {
+  grid-area: goal-sym;
+}
+#commitment .commit-wrap .commit-list .goal {
+  grid-area: goal-txt;
+}
+#commitment .commit-wrap .commit-list #time-icon {
+  grid-area: time-sym;
+}
+#commitment .commit-wrap .commit-list .time {
+  grid-area: time-txt;
+}
+#commitment .commit-wrap .commit-list #money-icon {
+  grid-area: money-sym;
+}
+#commitment .commit-wrap .commit-list .money {
+  grid-area: money-txt;
+}
+#commitment .commit-wrap .commit-list h3 {
+  text-align: left;
+}
+#commitment .commit-wrap .commit-list span i {
+  background: #444;
+  color: #fff;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  transform: rotate(0);
+  transition: transform 0.5s ease-in-out, color 0.5s, background-color 0.5s;
+}
+#commitment .commit-wrap .commit-list span i:hover {
+  transform: rotate(360deg);
+}
 #commitment #open-bmi-tool {
   cursor: pointer;
-  color: #1977BE; }
-
+  color: #1977BE;
+}
 #commitment #bmi-tool {
   display: none;
   position: fixed;
@@ -398,376 +510,494 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 6, 6, 0.4); }
-  #commitment #bmi-tool #bmi-modal-content {
-    position: relative;
-    left: 30%;
-    top: -50%;
-    background: #fff;
-    width: 40%;
-    transition: 2s; }
-    #commitment #bmi-tool #bmi-modal-content > h2 {
-      width: 100%;
-      position: relative;
-      background: #1977BE;
-      color: #fff; }
-      #commitment #bmi-tool #bmi-modal-content > h2 #close-bmi {
-        position: absolute;
-        top: -10%;
-        right: 3%;
-        cursor: pointer; }
-    #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap {
-      align-items: center;
-      justify-content: center; }
-      #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap input[type="number"] {
-        width: 30%; }
-      #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap #bmi-submit {
-        background: grey;
-        cursor: default; }
+  background: rgba(10, 6, 6, 0.4);
+}
+#commitment #bmi-tool #bmi-modal-content {
+  position: relative;
+  left: 30%;
+  top: -50%;
+  background: #fff;
+  width: 40%;
+  transition: 2s;
+}
+#commitment #bmi-tool #bmi-modal-content > h2 {
+  width: 100%;
+  position: relative;
+  background: #1977BE;
+  color: #fff;
+}
+#commitment #bmi-tool #bmi-modal-content > h2 #close-bmi {
+  position: absolute;
+  top: -10%;
+  right: 3%;
+  cursor: pointer;
+}
+#commitment #bmi-tool #bmi-modal-content #bmi-form-wrap {
+  align-items: center;
+  justify-content: center;
+}
+#commitment #bmi-tool #bmi-modal-content #bmi-form-wrap input[type=number] {
+  width: 30%;
+}
+#commitment #bmi-tool #bmi-modal-content #bmi-form-wrap #bmi-submit {
+  background: grey;
+  cursor: default;
+}
 
 #nutrition {
-  color: #000; }
-  #nutrition .macro-link {
-    color: #1977BE; }
-    #nutrition .macro-link:hover, #nutrition .macro-link:active, #nutrition .macro-link:visited {
-      color: #1977BE; }
-  #nutrition .macros-wrap #carbs,
-  #nutrition .macros-wrap #protein,
-  #nutrition .macros-wrap #fats {
-    background: #fff;
-    margin: 1rem;
-    flex: 1;
-    width: 100%;
-    transition: all 0.25s ease-in-out; }
-    #nutrition .macros-wrap #carbs:hover,
-    #nutrition .macros-wrap #protein:hover,
-    #nutrition .macros-wrap #fats:hover {
-      transform: translateY(-10px);
-      box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2); }
-    #nutrition .macros-wrap #carbs img,
-    #nutrition .macros-wrap #carbs p,
-    #nutrition .macros-wrap #protein img,
-    #nutrition .macros-wrap #protein p,
-    #nutrition .macros-wrap #fats img,
-    #nutrition .macros-wrap #fats p {
-      transition: left 1s; }
-  #nutrition .macros-wrap img {
-    width: 100%; }
-  #nutrition .macros-wrap #carbs {
-    flex-direction: column; }
-    #nutrition .macros-wrap #carbs h3,
-    #nutrition .macros-wrap #carbs .carbs-photo {
-      background-color: rgba(33, 253, 128, 0.3); }
-  #nutrition .macros-wrap #protein h3,
-  #nutrition .macros-wrap #protein .protein-photo {
-    background-color: rgba(33, 158, 253, 0.3); }
-  #nutrition .macros-wrap #fats h3,
-  #nutrition .macros-wrap #fats .fats-photo {
-    background-color: rgba(253, 33, 48, 0.3); }
+  color: #000;
+}
+#nutrition .macro-link {
+  color: #1977BE;
+}
+#nutrition .macro-link:hover, #nutrition .macro-link:active, #nutrition .macro-link:visited {
+  color: #1977BE;
+}
+#nutrition .macros-wrap #carbs,
+#nutrition .macros-wrap #protein,
+#nutrition .macros-wrap #fats {
+  background: #fff;
+  margin: 1rem;
+  flex: 1;
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+}
+#nutrition .macros-wrap #carbs:hover,
+#nutrition .macros-wrap #protein:hover,
+#nutrition .macros-wrap #fats:hover {
+  transform: translateY(-10px);
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+#nutrition .macros-wrap #carbs img,
+#nutrition .macros-wrap #carbs p,
+#nutrition .macros-wrap #protein img,
+#nutrition .macros-wrap #protein p,
+#nutrition .macros-wrap #fats img,
+#nutrition .macros-wrap #fats p {
+  transition: left 1s;
+}
+#nutrition .macros-wrap img {
+  width: 100%;
+}
+#nutrition .macros-wrap #carbs {
+  flex-direction: column;
+}
+#nutrition .macros-wrap #carbs h3,
+#nutrition .macros-wrap #carbs .carbs-photo {
+  background-color: rgba(33, 253, 128, 0.3);
+}
+#nutrition .macros-wrap #protein h3,
+#nutrition .macros-wrap #protein .protein-photo {
+  background-color: rgba(33, 158, 253, 0.3);
+}
+#nutrition .macros-wrap #fats h3,
+#nutrition .macros-wrap #fats .fats-photo {
+  background-color: rgba(253, 33, 48, 0.3);
+}
 
 #exercise .exercise-tips .tips-info,
 #exercise .exercise-tips .tips-photo {
-  flex: 1; }
-
+  flex: 1;
+}
 #exercise .exercise-tips .tips-info {
-  grid-template-areas: "form-icon form-txt" "variety-icon variety-txt" "rest-icon rest-txt"; }
-  #exercise .exercise-tips .tips-info .form-icon {
-    grid-area: "form-icon"; }
-  #exercise .exercise-tips .tips-info .form-txt {
-    grid-area: "form-txt"; }
-  #exercise .exercise-tips .tips-info .variety-icon {
-    grid-area: "variety-icon"; }
-  #exercise .exercise-tips .tips-info .variety-txt {
-    grid-area: "variety-txt"; }
-  #exercise .exercise-tips .tips-info .rest-icon {
-    grid-area: "rest-icon"; }
-  #exercise .exercise-tips .tips-info .rest-txt {
-    grid-area: "rest-txt"; }
-  #exercise .exercise-tips .tips-info h3 {
-    text-align: left; }
-  #exercise .exercise-tips .tips-info span i {
-    background: #444;
-    color: #fff;
-    line-height: 4rem;
-    height: 4rem;
-    width: 4rem; }
-
+  grid-template-areas: "form-icon form-txt" "variety-icon variety-txt" "rest-icon rest-txt";
+}
+#exercise .exercise-tips .tips-info .form-icon {
+  grid-area: "form-icon";
+}
+#exercise .exercise-tips .tips-info .form-txt {
+  grid-area: "form-txt";
+}
+#exercise .exercise-tips .tips-info .variety-icon {
+  grid-area: "variety-icon";
+}
+#exercise .exercise-tips .tips-info .variety-txt {
+  grid-area: "variety-txt";
+}
+#exercise .exercise-tips .tips-info .rest-icon {
+  grid-area: "rest-icon";
+}
+#exercise .exercise-tips .tips-info .rest-txt {
+  grid-area: "rest-txt";
+}
+#exercise .exercise-tips .tips-info h3 {
+  text-align: left;
+}
+#exercise .exercise-tips .tips-info span i {
+  background: #444;
+  color: #fff;
+  line-height: 4rem;
+  height: 4rem;
+  width: 4rem;
+}
 #exercise .exercise-tips .tips-photo {
-  margin-left: 1rem; }
-  #exercise .exercise-tips .tips-photo img {
-    width: 100%; }
+  margin-left: 1rem;
+}
+#exercise .exercise-tips .tips-photo img {
+  width: 100%;
+}
 
 #contact .contact-wrap {
-  justify-content: space-between; }
-  #contact .contact-wrap .contact-img-wrap img {
-    width: 100%; }
-  #contact .contact-wrap .contact-form-wrap h2,
-  #contact .contact-wrap .contact-form-wrap p {
-    text-align: left;
-    padding-left: 0.75rem; }
-  #contact .contact-wrap .contact-form-wrap form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    #contact .contact-wrap .contact-form-wrap form .data-input {
-      width: 100%; }
-    #contact .contact-wrap .contact-form-wrap form .message-input textarea {
-      border-radius: 1.1rem; }
+  justify-content: space-between;
+}
+#contact .contact-wrap .contact-img-wrap img {
+  width: 100%;
+}
+#contact .contact-wrap .contact-form-wrap h2,
+#contact .contact-wrap .contact-form-wrap p {
+  text-align: left;
+  padding-left: 0.75rem;
+}
+#contact .contact-wrap .contact-form-wrap form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact .contact-wrap .contact-form-wrap form .data-input {
+  width: 100%;
+}
+#contact .contact-wrap .contact-form-wrap form .message-input textarea {
+  border-radius: 1.1rem;
+}
 
 #macro-nav {
   position: relative;
-  background-color: #000; }
+  background-color: #000;
+}
 
 #macro-tool h3 {
   background: #1977BE;
-  color: #fff; }
-
+  color: #fff;
+}
 #macro-tool .macro-input {
-  flex: 1.5; }
-  #macro-tool .macro-input form input[type="number"] {
-    width: 35%; }
-  #macro-tool .macro-input form .buttons-wrap {
-    position: relative; }
-    #macro-tool .macro-input form .buttons-wrap .edit-btn, #macro-tool .macro-input form .buttons-wrap .delete-btn, #macro-tool .macro-input form .buttons-wrap .cancel-btn {
-      display: none; }
-    #macro-tool .macro-input form .buttons-wrap .cancel-btn {
-      position: absolute;
-      right: 0;
-      bottom: 0; }
-
+  flex: 1.5;
+}
+#macro-tool .macro-input form input[type=number] {
+  width: 35%;
+}
+#macro-tool .macro-input form .buttons-wrap {
+  position: relative;
+}
+#macro-tool .macro-input form .buttons-wrap .edit-btn, #macro-tool .macro-input form .buttons-wrap .delete-btn, #macro-tool .macro-input form .buttons-wrap .cancel-btn {
+  display: none;
+}
+#macro-tool .macro-input form .buttons-wrap .cancel-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 #macro-tool .macro-output {
   position: relative;
-  flex: 4; }
-  #macro-tool .macro-output .output-wrap {
-    grid-template-areas: 's-filter s-filter s-filter' 'mytable mytable  calorie' 'mytable mytable  piechart' 'mytable mytable piechart'; }
-    #macro-tool .macro-output .output-wrap #filter-users {
-      grid-area: s-filter;
-      position: relative; }
-      #macro-tool .macro-output .output-wrap #filter-users #user-list {
-        background: #fff;
-        position: absolute;
-        z-index: 2;
-        top: 2.5rem;
-        width: 25%;
-        height: 8rem;
-        overflow: scroll;
-        display: none; }
-        #macro-tool .macro-output .output-wrap #filter-users #user-list li:hover {
-          background: powderblue; }
-    #macro-tool .macro-output .output-wrap .calorie-wrap {
-      grid-area: calorie; }
-    #macro-tool .macro-output .output-wrap #piechart {
-      grid-area: piechart; }
-    #macro-tool .macro-output .output-wrap .table-wrap {
-      grid-area: mytable; }
-    #macro-tool .macro-output .output-wrap table thead {
-      background: #1977BE;
-      color: #fff; }
-    #macro-tool .macro-output .output-wrap input[type="submit"] {
-      display: inline-block; }
+  flex: 4;
+}
+#macro-tool .macro-output .output-wrap {
+  grid-template-areas: "s-filter s-filter s-filter" "mytable mytable  calorie" "mytable mytable  piechart" "mytable mytable piechart";
+}
+#macro-tool .macro-output .output-wrap #filter-users {
+  grid-area: s-filter;
+  position: relative;
+}
+#macro-tool .macro-output .output-wrap #filter-users #user-list {
+  background: #fff;
+  position: absolute;
+  z-index: 2;
+  top: 2.5rem;
+  width: 25%;
+  height: 8rem;
+  overflow: scroll;
+  display: none;
+}
+#macro-tool .macro-output .output-wrap #filter-users #user-list li:hover {
+  background: powderblue;
+}
+#macro-tool .macro-output .output-wrap .calorie-wrap {
+  grid-area: calorie;
+}
+#macro-tool .macro-output .output-wrap #piechart {
+  grid-area: piechart;
+}
+#macro-tool .macro-output .output-wrap .table-wrap {
+  grid-area: mytable;
+}
+#macro-tool .macro-output .output-wrap table thead {
+  background: #1977BE;
+  color: #fff;
+}
+#macro-tool .macro-output .output-wrap input[type=submit] {
+  display: inline-block;
+}
 
 footer {
   padding: 3rem 0;
   color: #fff;
-  background: #000; }
-  footer .footer-wrap {
-    grid-template-columns: repeat(3, 1fr);
-    position: relative;
-    justify-content: center;
-    align-items: top; }
-    footer .footer-wrap .social {
-      position: relative;
-      right: 0; }
-    footer .footer-wrap a {
-      margin-right: 1rem;
-      color: #fff; }
-    footer .footer-wrap i {
-      border: 2px #fff solid;
-      height: 3.75rem;
-      width: 3.75rem;
-      line-height: 3.75rem;
-      text-align: center; }
-      footer .footer-wrap i:hover {
-        border: 2px #fdee21 solid;
-        color: #fdee21; }
+  background: #000;
+}
+footer .footer-wrap {
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  justify-content: center;
+  align-items: top;
+}
+footer .footer-wrap .social {
+  position: relative;
+  right: 0;
+}
+footer .footer-wrap a {
+  margin-right: 1rem;
+  color: #fff;
+}
+footer .footer-wrap i {
+  border: 2px #fff solid;
+  height: 3.75rem;
+  width: 3.75rem;
+  line-height: 3.75rem;
+  text-align: center;
+}
+footer .footer-wrap i:hover {
+  border: 2px #fdee21 solid;
+  color: #fdee21;
+}
 
 @media (max-width: 1024px) {
   #macro-tool #macro-app .macro-input {
     margin: 0.5rem;
-    flex: 1.5; }
+    flex: 1.5;
+  }
   #macro-tool #macro-app .macro-output {
     margin: 0.5rem;
-    flex: 2; }
-    #macro-tool #macro-app .macro-output .output-wrap {
-      max-width: 400px;
-      font-size: 0.7rem;
-      padding: 0;
-      grid-template-areas: "s-filter" "calorie" "piechart" "mytable"; }
-      #macro-tool #macro-app .macro-output .output-wrap #filter-users,
-      #macro-tool #macro-app .macro-output .output-wrap table {
-        margin: 1rem; } }
-
+    flex: 2;
+  }
+  #macro-tool #macro-app .macro-output .output-wrap {
+    max-width: 400px;
+    font-size: 0.7rem;
+    padding: 0;
+    grid-template-areas: "s-filter" "calorie" "piechart" "mytable";
+  }
+  #macro-tool #macro-app .macro-output .output-wrap #filter-users,
+  #macro-tool #macro-app .macro-output .output-wrap table {
+    margin: 1rem;
+  }
+}
 @media (max-width: 820px) {
   .container {
     max-width: 1400px;
-    margin: 0 auto; }
+    margin: 0 auto;
+  }
   #home .home-content {
-    bottom: 10%; }
+    bottom: 10%;
+  }
   #about {
-    padding: 2rem; }
-    #about .about-wrap {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "info about-img" "steps about-img "; }
-      #about .about-wrap .info {
-        grid-area: info;
-        display: block; }
-        #about .about-wrap .info .info-2 {
-          display: none; }
-      #about .about-wrap .about-img {
-        grid-area: about-img; }
-      #about .about-wrap .steps {
-        grid-area: steps; }
-        #about .about-wrap .steps span {
-          font-size: 1.3rem; }
+    padding: 2rem;
+  }
+  #about .about-wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "info about-img" "steps about-img ";
+  }
+  #about .about-wrap .info {
+    grid-area: info;
+    display: block;
+  }
+  #about .about-wrap .info .info-2 {
+    display: none;
+  }
+  #about .about-wrap .about-img {
+    grid-area: about-img;
+  }
+  #about .about-wrap .steps {
+    grid-area: steps;
+  }
+  #about .about-wrap .steps span {
+    font-size: 1.3rem;
+  }
   #commitment .commit-wrap {
     margin: 0;
-    display: block; }
+    display: block;
+  }
   #commitment #bmi-tool #bmi-modal-content {
     width: 60%;
-    left: 20%; }
+    left: 20%;
+  }
   #nutrition {
-    padding: 2rem; }
-    #nutrition .macros-wrap {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 0.5rem; }
-      #nutrition .macros-wrap #carbs ul,
-      #nutrition .macros-wrap #protein ul,
-      #nutrition .macros-wrap #fats ul {
-        font-size: 0.9rem; }
+    padding: 2rem;
+  }
+  #nutrition .macros-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+  }
+  #nutrition .macros-wrap #carbs ul,
+  #nutrition .macros-wrap #protein ul,
+  #nutrition .macros-wrap #fats ul {
+    font-size: 0.9rem;
+  }
   #exercise {
-    padding: 2rem; }
-    #exercise .exercise-tips {
-      display: block; }
+    padding: 2rem;
+  }
+  #exercise .exercise-tips {
+    display: block;
+  }
   #contact {
-    padding: 2rem; } }
-
+    padding: 2rem;
+  }
+}
 @media (max-width: 600px) {
   .section-title {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+  }
   #home {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/nelsi-exercise.jpg") no-repeat center center/cover;
-    background-position: 60% 10%; }
-    #home .home-content {
-      bottom: 10%; }
+    background-position: 60% 10%;
+  }
+  #home .home-content {
+    bottom: 10%;
+  }
   nav {
-    background: #000; }
-    nav .navbar-wrap {
-      position: relative;
-      display: block;
-      padding: 0.25rem; }
-      nav .navbar-wrap .logo {
-        height: 4rem; }
-      nav .navbar-wrap #hamburger {
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        right: 5%;
-        top: 20px; }
-    nav .navbar-menu {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s ease-in-out; }
-      nav .navbar-menu ul {
-        display: block; }
-        nav .navbar-menu ul li {
-          margin: 1rem 0; }
+    background: #000;
+  }
+  nav .navbar-wrap {
+    position: relative;
+    display: block;
+    padding: 0.25rem;
+  }
+  nav .navbar-wrap .logo {
+    height: 4rem;
+  }
+  nav .navbar-wrap #hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 20px;
+  }
+  nav .navbar-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  nav .navbar-menu ul {
+    display: block;
+  }
+  nav .navbar-menu ul li {
+    margin: 1rem 0;
+  }
   #about .about-wrap {
-    display: block; }
-    #about .about-wrap .info-2 {
-      display: block; }
+    display: block;
+  }
+  #about .about-wrap .info-2 {
+    display: block;
+  }
   #nutrition .macros-wrap {
-    display: block; }
-    #nutrition .macros-wrap #carbs,
-    #nutrition .macros-wrap #protein,
-    #nutrition .macros-wrap #fats {
-      margin: 1rem 0; }
+    display: block;
+  }
+  #nutrition .macros-wrap #carbs,
+  #nutrition .macros-wrap #protein,
+  #nutrition .macros-wrap #fats {
+    margin: 1rem 0;
+  }
   #commitment #bmi-tool {
     position: relative;
     display: block;
-    background: rgba(0, 0, 0, 0); }
-    #commitment #bmi-tool #bmi-modal-content {
-      left: 0;
-      width: 100%; }
-      #commitment #bmi-tool #bmi-modal-content #close-bmi {
-        display: none; }
-      #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap {
-        padding: 0.5rem; }
-        #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap input[type="number"] {
-          width: 50%; }
+    background: rgba(0, 0, 0, 0);
+  }
+  #commitment #bmi-tool #bmi-modal-content {
+    left: 0;
+    width: 100%;
+  }
+  #commitment #bmi-tool #bmi-modal-content #close-bmi {
+    display: none;
+  }
+  #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap {
+    padding: 0.5rem;
+  }
+  #commitment #bmi-tool #bmi-modal-content #bmi-form-wrap input[type=number] {
+    width: 50%;
+  }
   #commitment .commit-list {
     position: relative;
-    display: block; }
-    #commitment .commit-list .goal,
-    #commitment .commit-list .time,
-    #commitment .commit-list .money {
-      margin-bottom: 1rem; }
-      #commitment .commit-list .goal h3,
-      #commitment .commit-list .time h3,
-      #commitment .commit-list .money h3 {
-        text-align: center; }
-    #commitment .commit-list #goal-icon,
-    #commitment .commit-list #time-icon,
-    #commitment .commit-list #money-icon {
-      position: relative;
-      left: 37%;
-      margin: 0; }
+    display: block;
+  }
+  #commitment .commit-list .goal,
+  #commitment .commit-list .time,
+  #commitment .commit-list .money {
+    margin-bottom: 1rem;
+  }
+  #commitment .commit-list .goal h3,
+  #commitment .commit-list .time h3,
+  #commitment .commit-list .money h3 {
+    text-align: center;
+  }
+  #commitment .commit-list #goal-icon,
+  #commitment .commit-list #time-icon,
+  #commitment .commit-list #money-icon {
+    position: relative;
+    left: 37%;
+    margin: 0;
+  }
   #contact .contact-wrap {
-    display: block; }
-    #contact .contact-wrap .contact-img-wrap,
-    #contact .contact-wrap .contact-form-wrap {
-      padding: 0; }
-    #contact .contact-wrap .contact-form-wrap h2 {
-      padding: 0;
-      text-align: center; }
+    display: block;
+  }
+  #contact .contact-wrap .contact-img-wrap,
+  #contact .contact-wrap .contact-form-wrap {
+    padding: 0;
+  }
+  #contact .contact-wrap .contact-form-wrap h2 {
+    padding: 0;
+    text-align: center;
+  }
   #exercise .exercise-tips .tips-photo {
-    margin: 0; }
+    margin: 0;
+  }
   #exercise .exercise-tips .tips-info {
     position: relative;
-    display: block; }
-    #exercise .exercise-tips .tips-info span {
-      position: relative;
-      left: 32%; }
-    #exercise .exercise-tips .tips-info .form-txt,
-    #exercise .exercise-tips .tips-info .variety-txt,
-    #exercise .exercise-tips .tips-info .rest-txt {
-      margin: 1rem 0; }
-      #exercise .exercise-tips .tips-info .form-txt h3,
-      #exercise .exercise-tips .tips-info .variety-txt h3,
-      #exercise .exercise-tips .tips-info .rest-txt h3 {
-        text-align: center; }
+    display: block;
+  }
+  #exercise .exercise-tips .tips-info span {
+    position: relative;
+    left: 32%;
+  }
+  #exercise .exercise-tips .tips-info .form-txt,
+  #exercise .exercise-tips .tips-info .variety-txt,
+  #exercise .exercise-tips .tips-info .rest-txt {
+    margin: 1rem 0;
+  }
+  #exercise .exercise-tips .tips-info .form-txt h3,
+  #exercise .exercise-tips .tips-info .variety-txt h3,
+  #exercise .exercise-tips .tips-info .rest-txt h3 {
+    text-align: center;
+  }
   footer .footer-wrap {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    align-content: space-between; }
-    footer .footer-wrap .copyright {
-      margin-top: 1rem;
-      order: 3;
-      text-align: center; }
+    align-content: space-between;
+  }
+  footer .footer-wrap .copyright {
+    margin-top: 1rem;
+    order: 3;
+    text-align: center;
+  }
   #macro-tool #macro-tool-info {
-    margin: 0.5rem; }
+    margin: 0.5rem;
+  }
   #macro-tool #macro-app {
-    display: block; }
-    #macro-tool #macro-app .macro-input,
-    #macro-tool #macro-app .macro-output {
-      margin: 0.5rem; }
-    #macro-tool #macro-app .output-wrap {
-      font-size: 0.7rem;
-      padding: 0rem;
-      display: block; }
-      #macro-tool #macro-app .output-wrap #filter-users {
-        margin: 1rem; }
-      #macro-tool #macro-app .output-wrap .table-wrap table th,
-      #macro-tool #macro-app .output-wrap .table-wrap table td {
-        padding: 0.5rem; } }
+    display: block;
+  }
+  #macro-tool #macro-app .macro-input,
+  #macro-tool #macro-app .macro-output {
+    margin: 0.5rem;
+  }
+  #macro-tool #macro-app .output-wrap {
+    font-size: 0.7rem;
+    padding: 0rem;
+    display: block;
+  }
+  #macro-tool #macro-app .output-wrap #filter-users {
+    margin: 1rem;
+  }
+  #macro-tool #macro-app .output-wrap .table-wrap table th,
+  #macro-tool #macro-app .output-wrap .table-wrap table td {
+    padding: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
